@@ -1,0 +1,31 @@
+{
+   "daily_Build":{
+      "MY20":{
+         "INFO35L_GA":{
+            "usb":"INFO35L_GA_DEV_mfg_20190114_E1.142.20.0.90B.zip",
+            "mfg":"INFO35L_GA_DEV_usb_20190114_E1.142.20.0.90B.zip"
+         },
+         "INFO35L_GEM":{
+            "usb":"INFO35L_GEM_DEV_mfg_20190114_E3.142.20.0.90B.zip",
+            "mfg":"INFO35L_GEM_DEV_usb_20190114_E3.142.20.0.90B.zip"
+         }
+      },
+      "MY21":{
+         "INFO35L_GA":{
+            "usb":"INFO35L_GA_DEV_mfg_20190114_E1.143.21.0.31B.zip",
+            "mfg":"INFO35L_GA_DEV_usb_20190114_E1.143.21.0.31B.zip"
+         },
+         "INFO35L_GB":{
+            "usb":"INFO35L_GB_DEV_mfg_20190114_E2.143.21.0.30B.zip",
+            "mfg":"INFO35L_GB_DEV_usb_20190114_E2.143.21.0.30B.zip"
+         },
+         "INFO35L_GEM":{
+            "usb":"INFO35L_GEM_DEV_mfg_20190114_E3.143.21.0.30B.zip",
+            "mfg":"INFO35L_GEM_DEV_usb_20190114_E3.143.21.0.30B.zip"
+         }
+      }
+   },
+   "develop_Build":{
+
+   }
+}
