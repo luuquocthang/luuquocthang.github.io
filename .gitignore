@@ -405,3 +405,51 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder settings
+Icon?
+._*
+
+# macOS metadata
+.Spotlight-V100
+.Trashes
+VolumeIcon.icns
+com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Logs
+*.log
+
+# Node dependencies (if using npm/yarn for JS tools)
+node_modules/
+
+# Build output (optional, depending on your setup)
+dist/
+build/
+
+# Cache files (e.g., Vite, Parcel, etc.)
+.cache/
+.vite/
+.next/
+out/
+
+# Env files
+.env
+.env.*
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional: macOS-style folders or file artifacts
+masos
