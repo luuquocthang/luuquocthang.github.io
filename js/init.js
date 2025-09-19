@@ -174,32 +174,33 @@ jQuery(document).ready(function ($) {
    function loadCertificates() {
       const certificateSources = {
          'Hackerrank': [
-            "frontend_developer_react certificate-1.jpg",
-            "react_basic certificate-1.jpg",
-            "sql_advanced certificate-1.jpg",
-            "sql_basic certificate-1.jpg",
-            "sql_intermediate certificate-1.jpg"
+            "sql_basic certificate.jpg",
+            "sql_advanced certificate.jpg",
+            "sql_intermediate certificate.jpg",
+            "frontend_developer_react certificate.jpg",
+            "react_basic certificate.jpg"
          ],
          'Scrum': [
             "Professional Scrum Master I.jpg",
          ],
          'Coursera': [
-            "Use Generative AI as Your Thought Partner-1.jpg"
+            "Use Generative AI as Your Thought Partner.jpg"
          ],
          'LinkedIn Learning': [
-            "CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot-1.jpg",
-            "CertificateOfCompletion_Agile Teams in the Age of AI-1.jpg"
+            "CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg",
+            "CertificateOfCompletion_Agile Teams in the Age of AI.jpg",
+            "CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg"
          ],
          'Udacity': [
-            "Go Language (Golang)-1.jpg"
+            "Go Language (Golang).jpg"
          ],
          'Datacamp': [
-            "Introduction to AI Agents-1.jpg",
-            "Understanding ChatGPT-1.jpg",
-            "Understanding Prompt Engineering-1.jpg"
+            "Introduction to AI Agents.jpg",
+            "Understanding ChatGPT.jpg",
+            "Understanding Prompt Engineering.jpg"
          ],
          'Harvard ManageMentor®': [
-            "leading_with_generative_ai-1.jpg",
+            "leading_with_generative_ai.jpg",
          ],
          'International Institute of Business Analysis': [
             "Certified Business Analyst Professional (CBAP).jpg",
