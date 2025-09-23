@@ -180,27 +180,36 @@ jQuery(document).ready(function ($) {
             "frontend_developer_react certificate.jpg",
             "react_basic certificate.jpg"
          ],
-         'Scrum': [
-            "Professional Scrum Master I.jpg",
-         ],
-         'Coursera': [
-            "Use Generative AI as Your Thought Partner.jpg"
+         'LevelupFPT': [
+            "AI Augmented Engineer for Developer.jpg",
+            "BRCMS awareness for Employees by GRC.jpg",
+            "Corporate Social Responsibility Training 2025 for All by GRC.jpg",
+            "Data Protection Training for All by GDPO.jpg",
+            "FPT_Occupational Safety and Health for All by GRC.jpg",
+            "ISMS Refresh Training S1 2025 for All by ISM.jpg",
+            "Prevention Culture No Recurrent Problems​ for Delivery by SEPG.jpg"
          ],
          'LinkedIn Learning': [
             "CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg",
             "CertificateOfCompletion_Agile Teams in the Age of AI.jpg",
             "CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg"
          ],
-         'Udacity': [
-            "Go Language (Golang).jpg"
-         ],
          'Datacamp': [
             "Introduction to AI Agents.jpg",
             "Understanding ChatGPT.jpg",
             "Understanding Prompt Engineering.jpg"
          ],
+         'Coursera': [
+            "Use Generative AI as Your Thought Partner.jpg"
+         ],
          'Harvard ManageMentor®': [
             "leading_with_generative_ai.jpg",
+         ],
+         'Udacity': [
+            "Go Language (Golang).jpg"
+         ],
+         'Scrum': [
+            "Professional Scrum Master I.jpg",
          ],
          'International Institute of Business Analysis': [
             "Certified Business Analyst Professional (CBAP).jpg",

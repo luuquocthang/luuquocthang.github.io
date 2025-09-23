@@ -453,3 +453,5 @@ out/
 
 # Optional: macOS-style folders or file artifacts
 masos
+# macOS system files
+.DS_Store
