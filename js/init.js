@@ -180,7 +180,7 @@ jQuery(document).ready(function ($) {
             "frontend_developer_react certificate.jpg",
             "react_basic certificate.jpg"
          ],
-         'LevelupFPT': [
+         'LevelUp FPT': [
             "AI Augmented Engineer for Developer.jpg",
             "BRCMS awareness for Employees by GRC.jpg",
             "Corporate Social Responsibility Training 2025 for All by GRC.jpg",
