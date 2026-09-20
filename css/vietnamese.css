@@ -1,0 +1,126 @@
+/* Be Vietnam Pro — Vietnamese diacritics stay the same size as the base letter. */
+
+html[lang="vi"],
+html[data-lang="vi"] {
+   font-family: 'Be Vietnam Pro', sans-serif;
+   text-rendering: optimizeLegibility;
+}
+
+html[lang="vi"] body,
+html[data-lang="vi"] body {
+   font-family: 'Be Vietnam Pro', sans-serif;
+   font-size: 16px;
+   line-height: 32px;
+}
+
+html[lang="vi"] h1,
+html[lang="vi"] h2,
+html[lang="vi"] h3,
+html[lang="vi"] h4,
+html[lang="vi"] h5,
+html[lang="vi"] h6,
+html[data-lang="vi"] h1,
+html[data-lang="vi"] h2,
+html[data-lang="vi"] h3,
+html[data-lang="vi"] h4,
+html[data-lang="vi"] h5,
+html[data-lang="vi"] h6 {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+   font-weight: 700 !important;
+}
+
+html[lang="vi"] p,
+html[lang="vi"] li,
+html[lang="vi"] td,
+html[lang="vi"] .lede,
+html[lang="vi"] .address,
+html[lang="vi"] .info,
+html[lang="vi"] .engagements-lead,
+html[lang="vi"] .credentials-intro,
+html[lang="vi"] .credential-note,
+html[lang="vi"] .hire-card p,
+html[lang="vi"] .hire-identity,
+html[data-lang="vi"] p,
+html[data-lang="vi"] li,
+html[data-lang="vi"] .lede,
+html[data-lang="vi"] .address,
+html[data-lang="vi"] .info,
+html[data-lang="vi"] .engagements-lead,
+html[data-lang="vi"] .credentials-intro,
+html[data-lang="vi"] .credential-note,
+html[data-lang="vi"] .hire-card p,
+html[data-lang="vi"] .hire-identity {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+   font-weight: 400 !important;
+   line-height: 1.8 !important;
+}
+
+html[lang="vi"] a,
+html[lang="vi"] span,
+html[lang="vi"] em,
+html[lang="vi"] small,
+html[lang="vi"] input,
+html[lang="vi"] textarea,
+html[lang="vi"] .skill-tags span,
+html[data-lang="vi"] a,
+html[data-lang="vi"] span,
+html[data-lang="vi"] em,
+html[data-lang="vi"] small,
+html[data-lang="vi"] input,
+html[data-lang="vi"] textarea,
+html[data-lang="vi"] .skill-tags span {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+}
+
+html[lang="vi"] em,
+html[data-lang="vi"] em {
+   font-style: italic;
+   font-weight: 400 !important;
+}
+
+html[lang="vi"] #nav a,
+html[lang="vi"] .button,
+html[lang="vi"] button,
+html[lang="vi"] strong,
+html[lang="vi"] b,
+html[lang="vi"] label,
+html[lang="vi"] .lang-switch button,
+html[data-lang="vi"] #nav a,
+html[data-lang="vi"] .button,
+html[data-lang="vi"] button,
+html[data-lang="vi"] strong,
+html[data-lang="vi"] b,
+html[data-lang="vi"] label,
+html[data-lang="vi"] .lang-switch button {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+   font-weight: 600 !important;
+}
+
+html[lang="vi"] header .banner-text h1,
+html[data-lang="vi"] header .banner-text h1 {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+   font-weight: 700 !important;
+}
+
+html[lang="vi"] header .banner-text h3,
+html[data-lang="vi"] header .banner-text h3 {
+   font-family: 'Be Vietnam Pro', sans-serif !important;
+   font-weight: 400 !important;
+   line-height: 1.7 !important;
+}
+
+html[lang="vi"] .fa,
+html[lang="vi"] .fa:before,
+html[data-lang="vi"] .fa,
+html[data-lang="vi"] .fa:before {
+   font-family: FontAwesome !important;
+   font-weight: normal !important;
+}
+
+html[lang="vi"] [class^="icon-"]:before,
+html[lang="vi"] [class*=" icon-"]:before,
+html[data-lang="vi"] [class^="icon-"]:before,
+html[data-lang="vi"] [class*=" icon-"]:before {
+   font-family: fontello !important;
+   font-weight: normal !important;
+}
