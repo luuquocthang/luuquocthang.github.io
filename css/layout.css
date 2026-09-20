@@ -223,6 +223,8 @@ ul#nav li.current a { color: #F06000; }
    width: 200px;
    height: 200px;
    border-radius: 100%;
+   object-fit: cover;
+   object-position: center 18%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -241,6 +243,54 @@ ul#nav li.current a { color: #F06000; }
 #about .download .button i {
    margin-right: 15px;
    font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Independent work
+/* ------------------------------------------------------------------ */
+
+#engagements {
+   background: #1A1A1A;
+   padding-top: 90px;
+   padding-bottom: 78px;
+   overflow: hidden;
+}
+#engagements h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#engagements h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#engagements .header-col { padding-top: 9px; }
+#engagements .main-col { padding-right: 10%; }
+#engagements .engagements-lead {
+   font: 17px/30px 'librebaskerville-regular', serif;
+   color: #9A9A9A;
+   margin-bottom: 36px;
+}
+#engagements h4 {
+   font: 13px/20px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   color: #E8E8E8;
+   margin: 4px 0 10px;
+}
+#engagements p {
+   font: 15px/26px 'librebaskerville-regular', serif;
+   color: #7A7A7A;
+   margin-bottom: 26px;
+}
+#engagements a,
+#engagements a:visited {
+   color: #11ABB0;
+}
+#engagements a:hover,
+#engagements a:focus {
+   color: #fff;
 }
 
 

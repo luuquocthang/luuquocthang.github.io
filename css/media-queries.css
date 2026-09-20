@@ -215,7 +215,12 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic {
+      display: block;
+      margin: 0 auto 24px auto;
+      width: 140px;
+      height: 140px;
+   }
    #about .download .button {
       width: 100%;
       text-align: center;
@@ -238,6 +243,12 @@
       border-left: none;
       padding-left: 0;
    }
+   #engagements .header-col {
+      padding-top: 0;
+      margin-bottom: 36px;
+      text-align: center;
+   }
+   #engagements .main-col { padding-right: 30px; }
    .credential-issuer {
       float: none;
       display: block;
