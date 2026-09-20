@@ -107,6 +107,28 @@ jQuery(document).ready(function ($) {
       $.magnificPopup.close();
    });
 
+   var contactPopupOptions = {
+      type: 'inline',
+      midClick: true,
+      removalDelay: 200,
+      mainClass: 'mfp-fade mfp-contact',
+      closeBtnInside: true,
+      callbacks: {
+         open: function () {
+            $('#contactForm').show();
+            $('#message-warning, #message-success').hide();
+         }
+      }
+   };
+
+   $('.contact-popup').magnificPopup(contactPopupOptions);
+
+   if (window.location.hash === '#contact-modal') {
+      $.magnificPopup.open($.extend({
+         items: { src: '#contact-modal' }
+      }, contactPopupOptions));
+   }
+
 
    /*----------------------------------------------------*/
    /* Flexslider
@@ -141,7 +163,7 @@ jQuery(document).ready(function ($) {
       var contactSubject = $.trim($('#contactForm #contactSubject').val());
       var contactMessage = $.trim($('#contactForm #contactMessage').val());
       var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail);
-      var phoneOk = /^[+0-9][0-9\s().-]{7,}$/.test(contactPhone);
+      var phoneOk = contactPhone === '' || /^[+0-9][0-9\s().-]{7,}$/.test(contactPhone);
 
       if (contactName.length < 2) {
          $('#message-warning').html('Please enter your name.').fadeIn();
