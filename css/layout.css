@@ -81,22 +81,6 @@ header .banner-text hr {
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
 }
-header .banner-cta {
-   margin: 22px 0 8px 0;
-}
-header .banner-cta .button {
-   background: #11ABB0;
-   color: #fff;
-   border: none;
-   font: 13px/18px 'opensans-bold', sans-serif;
-   letter-spacing: 1.5px;
-   text-transform: uppercase;
-   padding: 14px 26px;
-}
-header .banner-cta .button:hover {
-   background: #fff;
-   color: #111;
-}
 
 /* header social links */
 header .social {
