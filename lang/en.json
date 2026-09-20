@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": {
+      "home": "Luu Thang (Luu Quoc Thang) | Senior AI Engineer",
+      "hire": "Work with Luu Thang | AI, applications, and digital transformation",
+      "privacy": "Privacy Policy | Luu Thang"
+    },
+    "description": {
+      "home": "Luu Thang (Luu Quoc Thang) — Senior AI Engineer in Ha Noi. Production AI, websites for ads, mobile apps, and digital transformation for businesses.",
+      "hire": "Luu Thang in Ha Noi: production AI, websites for advertising, mobile applications, and digital transformation for businesses. A short note is welcome.",
+      "privacy": "Privacy policy for luuquocthang.github.io — how Luu Thang collects and uses contact-form data."
+    }
+  },
+  "nav": {
+    "show": "Show navigation",
+    "hide": "Hide navigation",
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "work": "Work",
+    "hire": "Hire",
+    "learning": "Learning",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "lang": "Language",
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "banner": {
+    "tagline": "Senior AI Engineer & Project Manager — from idea to production, with care"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am Luu Thang (Luu Quoc Thang), a Senior AI Engineer and Project Manager with nearly ten years in software delivery. I am at ease with both the technical and the commercial side of a project: models that must be trained and judged, and plans that must meet a budget and a date.",
+    "p2": "I have led T&M and Fixed-Price programs, including teams of up to 20 people — planning, risk, quality, and reporting to the customer. As an engineer I design and ship production AI: LLM fine-tuning (LoRA, QLoRA, PEFT), RAG and agents, computer vision, and speech (ASR/TTS), mainly with Python and PyTorch, integrated into Java/Spring, React, and cloud services when the product needs it.",
+    "p3": "I was previously a Technical Leader at FPT Software and a Senior Research Engineer at LG Electronics Vietnam. I still care about architecture, mentoring, and the last details that turn a demonstration into something people can trust.",
+    "p4": "Alongside company work, I accept a limited number of independent projects for businesses: production AI, websites designed for advertising, mobile applications, and digital-transformation work that teams can run day to day. A short note is always welcome; I will reply with care.",
+    "contactTitle": "Contact Details",
+    "address": "Tay Mo, Nam Tu Liem, Ha Noi",
+    "download": "Download Resume (CV)",
+    "photoAlt": "Luu Thang (Luu Quoc Thang), Senior AI Engineer"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "fptPm": {
+      "role": "Senior AI Engineer & Project Manager",
+      "b1": "Responsible for delivery on T&M and product workstreams: planning, resourcing, risk, budget, and client reporting.",
+      "b2": "Design and ship production AI — LLM fine-tuning, RAG, agents, speech and computer vision — alongside enterprise Java/Spring and React systems.",
+      "b3": "Accountable for release quality; coach engineers on AI engineering, evaluation, and the careful use of LLMs in delivery.",
+      "b4": "Lead teams of up to 20 people using Agile/Scrum, from estimation through production handover."
+    },
+    "fptTl": {
+      "role": "Technical Leader",
+      "b1": "Defined architecture and high-level design for business-unit projects and new customer solutions.",
+      "b2": "Built internal tools for reporting, ticket management, and engineer training.",
+      "b3": "Mentored members, ran technical interviews, and supported UAT through production fixes."
+    },
+    "lg": {
+      "role": "Senior Research Engineer",
+      "b1": "Developed automotive HMI software (C++, Python, QML): detailed design, implementation, and verification.",
+      "b2": "Built Python tooling to generate code from specifications and to automate test execution.",
+      "b3": "Investigated production issues and worked with global customers through Jira."
+    },
+    "fptTeam": {
+      "role": "Team Leader",
+      "b1": "Led delivery of a large ERP rebuild for a Japanese client (Angular, .NET): internal design, implementation, and test.",
+      "b2": "Coordinated unit, functional, and customer acceptance testing with onsite counterparts."
+    },
+    "fptSe": {
+      "role": "Software Engineer",
+      "b1": "Delivered features and defect fixes with customers and Bridge SE under Agile, including C++ work in FPT Automotive Global.",
+      "b2": "Clarified requirements, implemented changes, and verified against specification before release."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "genai": "Generative AI",
+    "speech": "Speech, Vision & ML",
+    "eng": "Software Engineering",
+    "cloud": "Cloud & MLOps"
+  },
+  "education": {
+    "title": "Education",
+    "school": "Posts and Telecommunications Institute of Technology (PTIT)",
+    "degree": "Bachelor of Information Technology"
+  },
+  "certs": {
+    "title": "Learning",
+    "intro": "Selected courses and assessments. You are welcome to open a title if you would like to see the original certificate.",
+    "professional": "Professional",
+    "aiProduct": "AI and product",
+    "company": "Company training",
+    "companyNote": "Internal programs at FPT Software."
+  },
+  "work": {
+    "title": "Independent",
+    "lead": "I am available for a limited number of independent projects: production AI, websites for advertising, mobile applications, and digital transformation for businesses. Many conversations begin through people I have already worked with. A brief message is enough; I will let you know, courteously, whether I can help.",
+    "howHelp": "How I can help",
+    "aiTitle": "Production AI",
+    "aiBody": "RAG and assistants over your documents, Vietnamese speech (ASR/TTS), computer vision, or fine-tuning a model for a domain task — designed, evaluated, and handed over so it can remain in production.",
+    "adsTitle": "Websites for advertising",
+    "adsBody": "Landing pages and sites with a clear offer, a measured load time, and a form that turns paid traffic into a conversation. Built so tracking can be attached cleanly.",
+    "mobileTitle": "Mobile applications",
+    "mobileBody": "iOS and Android products (React Native, or native where it is the better fit), with a defined scope, a release, and something staff or customers can use.",
+    "dxTitle": "Digital transformation",
+    "dxBody": "Internal tools, process automation, and AI inside the work people already do — so the organization is not left with unused pilots or scattered spreadsheets.",
+    "webTitle": "Web products",
+    "webBody": "Applications people open every day: React / Next.js, Java / Spring, or FastAPI, with authentication, data, and a release the customer can accept.",
+    "deliveryTitle": "Delivery",
+    "deliveryBody": "When an AI or software workstream needs a plan, a scope, and someone accountable through acceptance — the same care I bring to T&M and Fixed-Price programs.",
+    "howBegin": "How we begin",
+    "step1": "<strong>You write.</strong> The problem, who it is for, the timeline, and anything you already have.",
+    "step2": "<strong>I reply honestly.</strong> Whether I can help, or whether a narrower scope would serve you better.",
+    "step3": "<strong>We work together.</strong> One person accountable from that conversation through a result you can use.",
+    "fitTitle": "A good fit",
+    "fitBody": "I work well with founders, product owners, and companies that want a senior counterpart rather than a large vendor process. Conversations are confidential. I accept only as much work as I can give proper attention.",
+    "welcome": "You are welcome to write.",
+    "cta": "Get in touch"
+  },
+  "form": {
+    "title": "Get in touch",
+    "intro": "Thank you for writing. A few lines about the problem, who it is for, and your timeline are enough. I will reply by email.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "placeholder": "A short note on the problem, who it is for, and the timeline.",
+    "privacy": "I agree to the <a href=\"privacy.html\">privacy policy</a>.",
+    "send": "Send Message",
+    "success": "Thank you. Your message has been sent.",
+    "errName": "Please enter your name.",
+    "errEmail": "Please enter a valid email address.",
+    "errPhone": "Please enter a valid phone number.",
+    "errMessage": "Please enter a message (at least 10 characters).",
+    "errPrivacy": "Please agree to the privacy policy before sending.",
+    "errConfig": "Contact form is not configured yet. Please email thanglq.l2t@gmail.com directly.",
+    "errGeneric": "Something went wrong. Please try again.",
+    "errSend": "Could not send the message. Please email thanglq.l2t@gmail.com instead."
+  },
+  "footer": {
+    "hire": "Hire",
+    "privacy": "Privacy",
+    "profile": "Profile",
+    "top": "Back to Top"
+  },
+  "hire": {
+    "h1": "How I can help",
+    "lede": "I am Luu Thang. I help businesses with production AI, websites designed for advertising, mobile applications, and the internal systems their teams can rely on. Work is scoped clearly, treated as confidential, and owned by one person through to use.",
+    "services": "Services",
+    "aiBody": "RAG and assistants on your documents, Vietnamese speech, computer vision, or fine-tuning a model so it remains reliable after launch.",
+    "adsBody": "Landing pages and sites built for paid traffic: a clear offer, a measured load time, a form, and a structure ready for tracking.",
+    "mobileBody": "iOS and Android apps (React Native, or native when that is the better fit) that staff or customers can use after release.",
+    "dxBody": "Internal tools, process automation, and AI inside the real workflow — so the business is not left with unused pilots.",
+    "webBody": "Applications people open every day: React / Next.js, Java / Spring, FastAPI — with a release you can accept.",
+    "deliveryBody": "When an AI or software workstream needs a plan, a scope, and someone accountable through acceptance.",
+    "howBegin": "How we begin",
+    "step1": "You send the problem, who it is for, and the timeline.",
+    "step2": "I reply whether I can help — or whether a narrower scope would serve you better.",
+    "step3": "We work with one person accountable through a result you can put in front of users.",
+    "write": "Write to me",
+    "writeIntro": "I will reply by email. A few lines are enough; there is no long questionnaire.",
+    "direct": "Directly",
+    "directIntro": "If you prefer a call or Telegram, I am glad to hear from you there as well.",
+    "profile": "Full profile and CV"
+  },
+  "privacy": {
+    "h1": "Privacy Policy",
+    "lede": "Last updated: 20 September 2026. This site is operated by Luu Thang (Luu Quoc Thang), Tay Mo, Nam Tu Liem, Ha Noi, Vietnam.",
+    "collectTitle": "What I collect",
+    "collectBody": "If you use the contact form, I receive the name, email, phone number (if you provide one), subject, and message you submit. The form is processed by Web3Forms and delivered to my email. Server logs on GitHub Pages may include your IP address in the ordinary course of hosting.",
+    "whyTitle": "Why",
+    "whyBody": "I use that information only to reply to your enquiry, to discuss a possible engagement, and to keep a record of the conversation. I do not sell personal data, and I do not use it for unrelated marketing lists.",
+    "longTitle": "How long",
+    "longBody": "Enquiry emails are kept as long as needed to handle the request and any follow-up work, then deleted or archived with ordinary mailbox retention. You may ask me to delete your message.",
+    "choicesTitle": "Your choices",
+    "choicesBody": "Email <a href=\"mailto:thanglq.l2t@gmail.com\">thanglq.l2t@gmail.com</a> to access, correct, or delete personal data you sent through this site.",
+    "independent": "Independent work",
+    "back": "Return to the profile"
+  }
+}

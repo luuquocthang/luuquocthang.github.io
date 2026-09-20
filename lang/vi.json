@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": {
+      "home": "Lưu Thắng (Lưu Quốc Thắng) | Kỹ sư AI cao cấp",
+      "hire": "Hợp tác với Lưu Thắng | AI, ứng dụng và chuyển đổi số",
+      "privacy": "Chính sách bảo mật | Lưu Thắng"
+    },
+    "description": {
+      "home": "Lưu Thắng (Lưu Quốc Thắng) — Kỹ sư AI cao cấp tại Hà Nội. AI vận hành thực tế, website quảng cáo, ứng dụng di động và chuyển đổi số cho doanh nghiệp.",
+      "hire": "Lưu Thắng tại Hà Nội: AI vận hành thực tế, website cho quảng cáo, ứng dụng di động và chuyển đổi số cho doanh nghiệp. Một vài dòng trao đổi là đủ.",
+      "privacy": "Chính sách bảo mật của luuquocthang.github.io — cách Lưu Thắng thu thập và sử dụng dữ liệu form liên hệ."
+    }
+  },
+  "nav": {
+    "show": "Hiện menu",
+    "hide": "Ẩn menu",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "resume": "Hồ sơ",
+    "work": "Công việc",
+    "hire": "Hợp tác",
+    "learning": "Học tập",
+    "contact": "Liên hệ",
+    "privacy": "Bảo mật",
+    "lang": "Ngôn ngữ",
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+  },
+  "banner": {
+    "tagline": "Kỹ sư AI cao cấp & Quản lý dự án — từ ý tưởng đến vận hành, làm cẩn thận"
+  },
+  "about": {
+    "title": "Về tôi",
+    "p1": "Tôi là Lưu Thắng (Lưu Quốc Thắng), Kỹ sư AI cao cấp và Quản lý dự án, gần mười năm trong giao hàng phần mềm. Tôi làm được cả phần kỹ thuật lẫn phần thương mại của một dự án: mô hình cần được huấn luyện và đánh giá, kế hoạch cần khớp ngân sách và thời hạn.",
+    "p2": "Tôi đã dẫn dắt các chương trình T&M và Fixed-Price, gồm cả nhóm tới 20 người — lập kế hoạch, quản lý rủi ro, chất lượng và báo cáo với khách hàng. Với vai trò kỹ sư, tôi thiết kế và đưa AI vào vận hành: tinh chỉnh LLM (LoRA, QLoRA, PEFT), RAG và agent, thị giác máy tính, và giọng nói (ASR/TTS), chủ yếu bằng Python và PyTorch, tích hợp Java/Spring, React và dịch vụ đám mây khi sản phẩm cần.",
+    "p3": "Trước đây tôi là Technical Leader tại FPT Software và Kỹ sư nghiên cứu cao cấp tại LG Electronics Vietnam. Tôi vẫn coi trọng kiến trúc, mentoring, và những chi tiết cuối cùng biến một bản demo thành thứ người dùng có thể tin cậy.",
+    "p4": "Song song công việc công ty, tôi nhận một số dự án độc lập cho doanh nghiệp: AI vận hành thực tế, website thiết kế cho quảng cáo, ứng dụng di động, và chuyển đổi số mà đội ngũ có thể dùng hàng ngày. Một vài dòng trao đổi luôn được chào đón; tôi sẽ phản hồi cẩn thận.",
+    "contactTitle": "Thông tin liên hệ",
+    "address": "Tây Mỗ, Nam Từ Liêm, Hà Nội",
+    "download": "Tải CV",
+    "photoAlt": "Lưu Thắng (Lưu Quốc Thắng), Kỹ sư AI cao cấp"
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "present": "Hiện tại",
+    "fptPm": {
+      "role": "Kỹ sư AI cao cấp & Quản lý dự án",
+      "b1": "Chịu trách nhiệm giao hàng các luồng T&M và sản phẩm: lập kế hoạch, nhân sự, rủi ro, ngân sách và báo cáo khách hàng.",
+      "b2": "Thiết kế và đưa AI vào vận hành — tinh chỉnh LLM, RAG, agent, giọng nói và thị giác máy tính — cùng hệ thống Java/Spring và React doanh nghiệp.",
+      "b3": "Chịu trách nhiệm chất lượng phát hành; hướng dẫn kỹ sư về AI engineering, đánh giá, và sử dụng LLM cẩn trọng trong giao hàng.",
+      "b4": "Dẫn dắt nhóm tới 20 người theo Agile/Scrum, từ ước lượng đến bàn giao vận hành."
+    },
+    "fptTl": {
+      "role": "Technical Leader",
+      "b1": "Định nghĩa kiến trúc và thiết kế cấp cao cho dự án đơn vị kinh doanh và giải pháp khách hàng mới.",
+      "b2": "Xây dựng công cụ nội bộ cho báo cáo, quản lý ticket và đào tạo kỹ sư.",
+      "b3": "Mentoring thành viên, phỏng vấn kỹ thuật, và hỗ trợ UAT đến khi sửa lỗi trên môi trường thật."
+    },
+    "lg": {
+      "role": "Kỹ sư nghiên cứu cao cấp",
+      "b1": "Phát triển phần mềm HMI ô tô (C++, Python, QML): thiết kế chi tiết, hiện thực và kiểm chứng.",
+      "b2": "Xây dựng công cụ Python để sinh mã từ đặc tả và tự động hóa thực thi kiểm thử.",
+      "b3": "Điều tra sự cố sản xuất và làm việc với khách hàng toàn cầu qua Jira."
+    },
+    "fptTeam": {
+      "role": "Trưởng nhóm",
+      "b1": "Dẫn dắt giao hàng dự án xây lại ERP lớn cho khách hàng Nhật (Angular, .NET): thiết kế nội bộ, hiện thực và kiểm thử.",
+      "b2": "Phối hợp kiểm thử đơn vị, chức năng và nghiệm thu với đối tác onsite."
+    },
+    "fptSe": {
+      "role": "Kỹ sư phần mềm",
+      "b1": "Giao tính năng và sửa lỗi cùng khách hàng và Bridge SE theo Agile, gồm công việc C++ tại FPT Automotive Global.",
+      "b2": "Làm rõ yêu cầu, hiện thực thay đổi, và kiểm chứng theo đặc tả trước khi phát hành."
+    }
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "genai": "AI tạo sinh",
+    "speech": "Giọng nói, thị giác & ML",
+    "eng": "Kỹ thuật phần mềm",
+    "cloud": "Cloud & MLOps"
+  },
+  "education": {
+    "title": "Học vấn",
+    "school": "Học viện Công nghệ Bưu chính Viễn thông (PTIT)",
+    "degree": "Cử nhân Công nghệ thông tin"
+  },
+  "certs": {
+    "title": "Học tập",
+    "intro": "Một số khóa học và đánh giá đã chọn. Bạn có thể mở từng tiêu đề nếu muốn xem chứng chỉ gốc.",
+    "professional": "Chuyên môn",
+    "aiProduct": "AI và sản phẩm",
+    "company": "Đào tạo nội bộ",
+    "companyNote": "Chương trình nội bộ tại FPT Software."
+  },
+  "work": {
+    "title": "Độc lập",
+    "lead": "Tôi nhận một số dự án độc lập: AI vận hành thực tế, website cho quảng cáo, ứng dụng di động, và chuyển đổi số cho doanh nghiệp. Nhiều trao đổi bắt đầu từ người đã từng làm việc cùng tôi. Một tin nhắn ngắn là đủ; tôi sẽ cho bạn biết, một cách lịch sự, liệu tôi có thể hỗ trợ được không.",
+    "howHelp": "Tôi có thể hỗ trợ",
+    "aiTitle": "AI vận hành thực tế",
+    "aiBody": "RAG và trợ lý trên tài liệu của bạn, giọng nói tiếng Việt (ASR/TTS), thị giác máy tính, hoặc tinh chỉnh mô hình cho tác vụ chuyên ngành — được thiết kế, đánh giá và bàn giao để có thể vận hành lâu dài.",
+    "adsTitle": "Website cho quảng cáo",
+    "adsBody": "Landing page và website với đề xuất rõ, thời gian tải đo được, và form biến lưu lượng trả phí thành một cuộc trao đổi. Xây sẵn để gắn tracking gọn gàng.",
+    "mobileTitle": "Ứng dụng di động",
+    "mobileBody": "Sản phẩm iOS và Android (React Native, hoặc native khi phù hợp hơn), với phạm vi rõ, bản phát hành, và thứ nhân viên hoặc khách hàng có thể dùng.",
+    "dxTitle": "Chuyển đổi số",
+    "dxBody": "Công cụ nội bộ, tự động hóa quy trình, và AI trong công việc mọi người đang làm — để tổ chức không còn những thí điểm bỏ quên hay bảng tính rải rác.",
+    "webTitle": "Sản phẩm web",
+    "webBody": "Ứng dụng mọi người mở hàng ngày: React / Next.js, Java / Spring, hoặc FastAPI, kèm xác thực, dữ liệu, và bản phát hành khách hàng có thể nghiệm thu.",
+    "deliveryTitle": "Giao hàng dự án",
+    "deliveryBody": "Khi một luồng AI hoặc phần mềm cần kế hoạch, phạm vi, và người chịu trách nhiệm đến nghiệm thu — cùng sự cẩn thận tôi mang vào các chương trình T&M và Fixed-Price.",
+    "howBegin": "Cách chúng ta bắt đầu",
+    "step1": "<strong>Bạn viết.</strong> Vấn đề, đối tượng, thời hạn, và những gì đã có sẵn.",
+    "step2": "<strong>Tôi trả lời thẳng thắn.</strong> Tôi có thể hỗ trợ, hoặc một phạm vi hẹp hơn sẽ phù hợp hơn.",
+    "step3": "<strong>Chúng ta làm cùng nhau.</strong> Một người chịu trách nhiệm từ cuộc trao đổi đó đến kết quả bạn có thể dùng.",
+    "fitTitle": "Khi nào phù hợp",
+    "fitBody": "Tôi làm tốt với founder, product owner, và công ty muốn một đối tác senior hơn là quy trình vendor lớn. Trao đổi được giữ bí mật. Tôi chỉ nhận lượng việc có thể chăm sóc đầy đủ.",
+    "welcome": "Rất vui được nhận tin từ bạn.",
+    "cta": "Liên hệ"
+  },
+  "form": {
+    "title": "Liên hệ",
+    "intro": "Cảm ơn bạn đã viết. Vài dòng về vấn đề, đối tượng và thời hạn là đủ. Tôi sẽ phản hồi qua email.",
+    "name": "Họ tên",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "subject": "Tiêu đề",
+    "message": "Nội dung",
+    "placeholder": "Vài dòng về vấn đề, đối tượng và thời hạn.",
+    "privacy": "Tôi đồng ý với <a href=\"privacy.html\">chính sách bảo mật</a>.",
+    "send": "Gửi tin nhắn",
+    "success": "Cảm ơn bạn. Tin nhắn đã được gửi.",
+    "errName": "Vui lòng nhập họ tên.",
+    "errEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "errPhone": "Vui lòng nhập số điện thoại hợp lệ.",
+    "errMessage": "Vui lòng nhập nội dung (ít nhất 10 ký tự).",
+    "errPrivacy": "Vui lòng đồng ý với chính sách bảo mật trước khi gửi.",
+    "errConfig": "Form liên hệ chưa được cấu hình. Vui lòng gửi email trực tiếp tới thanglq.l2t@gmail.com.",
+    "errGeneric": "Đã có lỗi. Vui lòng thử lại.",
+    "errSend": "Không gửi được tin nhắn. Vui lòng email thanglq.l2t@gmail.com."
+  },
+  "footer": {
+    "hire": "Hợp tác",
+    "privacy": "Bảo mật",
+    "profile": "Hồ sơ",
+    "top": "Về đầu trang"
+  },
+  "hire": {
+    "h1": "Tôi có thể hỗ trợ",
+    "lede": "Tôi là Lưu Thắng. Tôi hỗ trợ doanh nghiệp với AI vận hành thực tế, website thiết kế cho quảng cáo, ứng dụng di động, và hệ thống nội bộ đội ngũ có thể tin cậy. Công việc được chốt phạm vi rõ, giữ bí mật, và do một người chịu trách nhiệm đến khi đưa vào sử dụng.",
+    "services": "Dịch vụ",
+    "aiBody": "RAG và trợ lý trên tài liệu của bạn, giọng nói tiếng Việt, thị giác máy tính, hoặc tinh chỉnh mô hình để vẫn tin cậy sau khi ra mắt.",
+    "adsBody": "Landing page và website cho lưu lượng trả phí: đề xuất rõ, thời gian tải đo được, form, và cấu trúc sẵn sàng gắn tracking.",
+    "mobileBody": "Ứng dụng iOS và Android (React Native, hoặc native khi phù hợp hơn) mà nhân viên hoặc khách hàng có thể dùng sau khi phát hành.",
+    "dxBody": "Công cụ nội bộ, tự động hóa quy trình, và AI trong quy trình thật — để doanh nghiệp không còn những thí điểm bỏ quên.",
+    "webBody": "Ứng dụng mọi người mở hàng ngày: React / Next.js, Java / Spring, FastAPI — với bản phát hành bạn có thể nghiệm thu.",
+    "deliveryBody": "Khi một luồng AI hoặc phần mềm cần kế hoạch, phạm vi, và người chịu trách nhiệm đến nghiệm thu.",
+    "howBegin": "Cách chúng ta bắt đầu",
+    "step1": "Bạn gửi vấn đề, đối tượng và thời hạn.",
+    "step2": "Tôi phản hồi liệu tôi có thể hỗ trợ — hoặc một phạm vi hẹp hơn sẽ phù hợp hơn.",
+    "step3": "Chúng ta làm việc với một người chịu trách nhiệm đến kết quả bạn có thể đưa cho người dùng.",
+    "write": "Viết cho tôi",
+    "writeIntro": "Tôi sẽ phản hồi qua email. Vài dòng là đủ; không có bảng hỏi dài.",
+    "direct": "Liên hệ trực tiếp",
+    "directIntro": "Nếu bạn muốn gọi điện hoặc nhắn Telegram, tôi cũng rất vui được nhận.",
+    "profile": "Hồ sơ đầy đủ và CV"
+  },
+  "privacy": {
+    "h1": "Chính sách bảo mật",
+    "lede": "Cập nhật: 20 tháng 9 năm 2026. Trang này do Lưu Thắng (Lưu Quốc Thắng) vận hành, Tây Mỗ, Nam Từ Liêm, Hà Nội, Việt Nam.",
+    "collectTitle": "Tôi thu thập gì",
+    "collectBody": "Khi bạn dùng form liên hệ, tôi nhận họ tên, email, số điện thoại (nếu bạn điền), tiêu đề và nội dung tin nhắn. Form được Web3Forms xử lý và gửi về email của tôi. Nhật ký máy chủ trên GitHub Pages có thể gồm địa chỉ IP trong quá trình lưu trữ thông thường.",
+    "whyTitle": "Mục đích",
+    "whyBody": "Tôi chỉ dùng thông tin đó để trả lời trao đổi của bạn, bàn về khả năng hợp tác, và lưu lại cuộc trò chuyện. Tôi không bán dữ liệu cá nhân, và không dùng cho danh sách tiếp thị không liên quan.",
+    "longTitle": "Thời gian lưu",
+    "longBody": "Email trao đổi được giữ trong thời gian cần để xử lý yêu cầu và công việc tiếp theo, rồi xóa hoặc lưu theo thói quen hộp thư thông thường. Bạn có thể yêu cầu tôi xóa tin nhắn.",
+    "choicesTitle": "Lựa chọn của bạn",
+    "choicesBody": "Gửi email <a href=\"mailto:thanglq.l2t@gmail.com\">thanglq.l2t@gmail.com</a> để xem, chỉnh hoặc xóa dữ liệu cá nhân bạn đã gửi qua trang này.",
+    "independent": "Hợp tác độc lập",
+    "back": "Về trang hồ sơ"
+  }
+}

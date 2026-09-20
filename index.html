@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-page="home">
 
 <head>
 
@@ -22,7 +22,7 @@
    <meta property="og:site_name" content="Luu Thang">
    <meta property="og:url" content="https://luuquocthang.github.io/">
    <meta property="og:title" content="Luu Thang (Luu Quoc Thang) | Senior AI Engineer">
-   <meta property="og:description" content="Senior AI Engineer and Project Manager. Production LLM, RAG, agents, speech and computer vision — plus a small independent practice.">
+   <meta property="og:description" content="Senior AI Engineer and Project Manager in Ha Noi. Production AI, advertising websites, mobile applications, and digital transformation — independent work, with care.">
    <meta property="og:image" content="https://luuquocthang.github.io/images/og-image.jpg">
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="630">
@@ -113,22 +113,33 @@
    <header id="home">
 
       <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation" data-i18n-title="nav.show">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation" data-i18n-title="nav.hide">Hide navigation</a>
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#engagements">Work</a></li>
-            <li><a href="hire.html">Hire</a></li>
-            <li><a class="smoothscroll" href="#credentials">Learning</a></li>
-            <li><a href="#contact-modal" class="contact-popup">Contact</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" data-i18n="nav.about">About</a></li>
+            <li><a class="smoothscroll" href="#resume" data-i18n="nav.resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#engagements" data-i18n="nav.work">Work</a></li>
+            <li><a href="hire.html" data-i18n="nav.hire">Hire</a></li>
+            <li><a class="smoothscroll" href="#credentials" data-i18n="nav.learning">Learning</a></li>
+            <li><a href="#contact-modal" class="contact-popup" data-i18n="nav.contact">Contact</a></li>
          </ul>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="nav.lang">
+         <i class="fa fa-globe" aria-hidden="true"></i>
+         <button type="button" data-set-lang="en" title="English" aria-label="English" data-i18n-title="nav.en" data-i18n-aria="nav.en">
+            <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
+            <span>EN</span>
+         </button>
+         <button type="button" data-set-lang="vi" title="Tiếng Việt" aria-label="Tiếng Việt" data-i18n-title="nav.vi" data-i18n-aria="nav.vi">
+            <span class="lang-flag lang-flag-vi" aria-hidden="true"></span>
+            <span>VI</span>
+         </button>
+      </div>
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Luu Thang</h1>
-            <h3>Senior AI Engineer &amp; Project Manager — I take <span>AI</span> from idea to production</h3>
+            <h3 data-i18n="banner.tagline">Senior AI Engineer &amp; Project Manager — from idea to production, with care</h3>
             <hr />
             <ul class="social">
                <li><a href="https://www.facebook.com/thang.l2t" rel="me" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -150,38 +161,41 @@
 
          <div class="three columns">
 
-            <img class="profile-pic" src="images/profilepic.JPG" width="200" height="200" alt="Luu Thang (Luu Quoc Thang), Senior AI Engineer" />
+            <img class="profile-pic" src="images/profilepic.JPG" width="200" height="200" alt="Luu Thang (Luu Quoc Thang), Senior AI Engineer" data-i18n-alt="about.photoAlt" />
 
          </div>
 
          <div class="nine columns main-col">
 
-            <h2>About Me</h2>
-            <p>
-               I am Luu Thang (Luu Quoc Thang), a Senior AI Engineer and Project Manager with nearly ten years in software delivery.
-               I am comfortable in both rooms: training and evaluating models, and owning a plan, a budget, and a customer deadline.
+            <h2 data-i18n="about.title">About Me</h2>
+            <p data-i18n="about.p1">
+               I am Luu Thang (Luu Quoc Thang), a Senior AI Engineer and Project Manager with nearly ten years
+               in software delivery. I am at ease with both the technical and the commercial side of a project:
+               models that must be trained and judged, and plans that must meet a budget and a date.
             </p>
-            <p>
-               I have led T&amp;M and Fixed-Price programs, including teams of up to 20 people — planning, risk, quality, and
-               stakeholder reporting. On the engineering side I design and ship production AI: LLM fine-tuning (LoRA, QLoRA, PEFT),
-               RAG and agents, computer vision, and speech (ASR/TTS), mainly with Python and PyTorch, integrated into Java/Spring,
-               React, and cloud services when the product requires it.
+            <p data-i18n="about.p2">
+               I have led T&amp;M and Fixed-Price programs, including teams of up to 20 people — planning, risk,
+               quality, and reporting to the customer. As an engineer I design and ship production AI: LLM fine-tuning
+               (LoRA, QLoRA, PEFT), RAG and agents, computer vision, and speech (ASR/TTS), mainly with Python and PyTorch,
+               integrated into Java/Spring, React, and cloud services when the product needs it.
             </p>
-            <p>
-               Previously I was a Technical Leader at FPT Software and a Senior Research Engineer at LG Electronics Vietnam.
-               I still care about architecture, mentoring, and the last 5% of detail that turns a demo into something users can trust.
+            <p data-i18n="about.p3">
+               I was previously a Technical Leader at FPT Software and a Senior Research Engineer at LG Electronics Vietnam.
+               I still care about architecture, mentoring, and the last details that turn a demonstration into something
+               people can trust.
             </p>
-            <p>
-               I also keep a small independent practice for businesses and founders: production AI, websites built to run ads,
-               mobile apps, and digital-transformation work they can actually operate. If that is you, a short note is enough.
+            <p data-i18n="about.p4">
+               Alongside company work, I accept a limited number of independent projects for businesses: production AI,
+               websites designed for advertising, mobile applications, and digital-transformation work that teams can
+               run day to day. A short note is always welcome; I will reply with care.
             </p>
 
             <div class="row">
                <div class="columns contact-details">
-                  <h2>Contact Details</h2>
+                  <h2 data-i18n="about.contactTitle">Contact Details</h2>
                   <p class="address">
                      <span>Luu Thang</span><br>
-                     <span><i class="fa fa-map-marker"></i> Tay Mo, Nam Tu Liem, Ha Noi</span><br>
+                     <span><i class="fa fa-map-marker"></i> <span data-i18n="about.address">Tay Mo, Nam Tu Liem, Ha Noi</span></span><br>
                      <span><i class="fa fa-phone"></i> <a href="tel:+84364384662">(+84) 0364384662</a></span><br>
                      <span><i class="fa fa-phone"></i> <a href="tel:+84703333199">(+84) 0703333199</a></span><br>
                      <span><i class="fa fa-envelope"></i> <a href="mailto:thanglq.l2t@gmail.com">thanglq.l2t@gmail.com</a></span><br>
@@ -190,8 +204,7 @@
 
                <div class="columns download">
                   <p>
-                     <a href="cv/FPT_CV_Senior_AI_Engineering_Luu Quoc Thang.docx" class="button"><i class="fa fa-download"></i>Download Resume
-                        (CV)</a>
+                     <a href="cv/FPT_CV_Senior_AI_Engineering_Luu Quoc Thang.docx" class="button"><i class="fa fa-download"></i><span data-i18n="about.download">Download Resume (CV)</span></a>
                   </p>
                </div>
             </div>
@@ -202,7 +215,7 @@
 
       <div class="row work">
          <div class="three columns header-col">
-            <h1><span>Experience</span></h1>
+            <h1><span data-i18n="experience.title">Experience</span></h1>
          </div>
 
 
@@ -210,54 +223,54 @@
             <div class="row item work-item">
                <div class="twelve columns">
                   <h3>FPT Software</h3>
-                  <p class="info">Senior AI Engineer &amp; Project Manager<span>&bull;</span> <em class="date">2021 – Present</em></p>
+                  <p class="info"><span data-i18n="experience.fptPm.role">Senior AI Engineer &amp; Project Manager</span><span>&bull;</span> <em class="date">2021 – <span data-i18n="experience.present">Present</span></em></p>
                   <ul class="disc">
-                     <li>Own delivery for T&amp;M and product workstreams: planning, resourcing, risk, budget, and client reporting.</li>
-                     <li>Design and ship production AI — LLM fine-tuning, RAG, agents, speech and computer vision — alongside enterprise Java/Spring and React systems.</li>
-                     <li>Accountable for release quality; coach engineers on AI engineering, evaluation, and safe use of LLMs in delivery.</li>
-                     <li>Lead teams of up to 20 people using Agile/Scrum, from estimation through production handover.</li>
+                     <li data-i18n="experience.fptPm.b1">Responsible for delivery on T&amp;M and product workstreams: planning, resourcing, risk, budget, and client reporting.</li>
+                     <li data-i18n="experience.fptPm.b2">Design and ship production AI — LLM fine-tuning, RAG, agents, speech and computer vision — alongside enterprise Java/Spring and React systems.</li>
+                     <li data-i18n="experience.fptPm.b3">Accountable for release quality; coach engineers on AI engineering, evaluation, and the careful use of LLMs in delivery.</li>
+                     <li data-i18n="experience.fptPm.b4">Lead teams of up to 20 people using Agile/Scrum, from estimation through production handover.</li>
                   </ul>
                </div>
             </div>
             <div class="row item work-item">
                <div class="twelve columns">
                   <h3>FPT Software</h3>
-                  <p class="info">Technical Leader<span>&bull;</span> <em class="date">2020 – 2021</em></p>
+                  <p class="info"><span data-i18n="experience.fptTl.role">Technical Leader</span><span>&bull;</span> <em class="date">2020 – 2021</em></p>
                   <ul class="disc">
-                     <li>Defined architecture and high-level design for business-unit projects and new customer solutions.</li>
-                     <li>Built internal tools for reporting, ticket management, and engineer training.</li>
-                     <li>Mentored members, ran technical interviews, and supported UAT through production fixes.</li>
+                     <li data-i18n="experience.fptTl.b1">Defined architecture and high-level design for business-unit projects and new customer solutions.</li>
+                     <li data-i18n="experience.fptTl.b2">Built internal tools for reporting, ticket management, and engineer training.</li>
+                     <li data-i18n="experience.fptTl.b3">Mentored members, ran technical interviews, and supported UAT through production fixes.</li>
                   </ul>
                </div>
             </div>
             <div class="row item work-item">
                <div class="twelve columns">
                   <h3>LG Electronics Vietnam</h3>
-                  <p class="info">Senior Research Engineer<span>&bull;</span> <em class="date">2018 – 2020</em></p>
+                  <p class="info"><span data-i18n="experience.lg.role">Senior Research Engineer</span><span>&bull;</span> <em class="date">2018 – 2020</em></p>
                   <ul class="disc">
-                     <li>Developed automotive HMI software (C++, Python, QML): detailed design, implementation, and verification.</li>
-                     <li>Built Python tooling to generate code from specifications and to automate test execution.</li>
-                     <li>Investigated production issues and worked with global customers through Jira.</li>
+                     <li data-i18n="experience.lg.b1">Developed automotive HMI software (C++, Python, QML): detailed design, implementation, and verification.</li>
+                     <li data-i18n="experience.lg.b2">Built Python tooling to generate code from specifications and to automate test execution.</li>
+                     <li data-i18n="experience.lg.b3">Investigated production issues and worked with global customers through Jira.</li>
                   </ul>
                </div>
             </div>
             <div class="row item work-item">
                <div class="twelve columns">
                   <h3>FPT Software</h3>
-                  <p class="info">Team Leader<span>&bull;</span> <em class="date">2017 – 2018</em></p>
+                  <p class="info"><span data-i18n="experience.fptTeam.role">Team Leader</span><span>&bull;</span> <em class="date">2017 – 2018</em></p>
                   <ul class="disc">
-                     <li>Led delivery of a large ERP rebuild for a Japanese client (Angular, .NET): internal design, implementation, and test.</li>
-                     <li>Coordinated unit, functional, and customer acceptance testing with onsite counterparts.</li>
+                     <li data-i18n="experience.fptTeam.b1">Led delivery of a large ERP rebuild for a Japanese client (Angular, .NET): internal design, implementation, and test.</li>
+                     <li data-i18n="experience.fptTeam.b2">Coordinated unit, functional, and customer acceptance testing with onsite counterparts.</li>
                   </ul>
                </div>
             </div>
             <div class="row item work-item">
                <div class="twelve columns">
                   <h3>FPT Software</h3>
-                  <p class="info">Software Engineer<span>&bull;</span> <em class="date">2016 – 2017</em></p>
+                  <p class="info"><span data-i18n="experience.fptSe.role">Software Engineer</span><span>&bull;</span> <em class="date">2016 – 2017</em></p>
                   <ul class="disc">
-                     <li>Delivered features and defect fixes with customers and Bridge SE under Agile, including C++ work in FPT Automotive Global.</li>
-                     <li>Clarified requirements, implemented changes, and verified against specification before release.</li>
+                     <li data-i18n="experience.fptSe.b1">Delivered features and defect fixes with customers and Bridge SE under Agile, including C++ work in FPT Automotive Global.</li>
+                     <li data-i18n="experience.fptSe.b2">Clarified requirements, implemented changes, and verified against specification before release.</li>
                   </ul>
                </div>
             </div>
@@ -266,12 +279,12 @@
 
       <div class="row skill">
          <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span data-i18n="skills.title">Skills</span></h1>
          </div>
 
          <div class="nine columns main-col">
             <div class="skill-group">
-               <h4>Generative AI</h4>
+               <h4 data-i18n="skills.genai">Generative AI</h4>
                <div class="skill-tags">
                   <span>LoRA / QLoRA / PEFT</span>
                   <span>SFT / Unsloth</span>
@@ -295,7 +308,7 @@
                </div>
             </div>
             <div class="skill-group">
-               <h4>Speech, Vision &amp; ML</h4>
+               <h4 data-i18n="skills.speech">Speech, Vision &amp; ML</h4>
                <div class="skill-tags">
                   <span>PyTorch</span>
                   <span>Whisper / XTTS</span>
@@ -309,7 +322,7 @@
                </div>
             </div>
             <div class="skill-group">
-               <h4>Software Engineering</h4>
+               <h4 data-i18n="skills.eng">Software Engineering</h4>
                <div class="skill-tags">
                   <span>Python</span>
                   <span>FastAPI / Pydantic</span>
@@ -324,7 +337,7 @@
                </div>
             </div>
             <div class="skill-group">
-               <h4>Cloud &amp; MLOps</h4>
+               <h4 data-i18n="skills.cloud">Cloud &amp; MLOps</h4>
                <div class="skill-tags">
                   <span>vLLM / TGI</span>
                   <span>Docker / Kubernetes</span>
@@ -343,14 +356,14 @@
 
       <div class="row education">
          <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+            <h1><span data-i18n="education.title">Education</span></h1>
          </div>
 
          <div class="nine columns main-col">
             <div class="row item">
                <div class="twelve columns">
-                  <h3>Posts and Telecommunications Institute of Technology (PTIT)</h3>
-                  <p class="info">Bachelor of Information Technology<span>&bull;</span> <em class="date">2012 – 2016</em></p>
+                  <h3 data-i18n="education.school">Posts and Telecommunications Institute of Technology (PTIT)</h3>
+                  <p class="info"><span data-i18n="education.degree">Bachelor of Information Technology</span><span>&bull;</span> <em class="date">2012 – 2016</em></p>
                </div>
             </div>
          </div>
@@ -358,10 +371,10 @@
 
       <div class="row certification" id="credentials">
          <div class="three columns header-col">
-            <h1><span>Learning</span></h1>
+            <h1><span data-i18n="certs.title">Learning</span></h1>
          </div>
          <div class="nine columns main-col">
-            <p class="credentials-intro">Courses and assessments I have completed along the way. Click a title if you would like to see the original certificate.</p>
+            <p class="credentials-intro" data-i18n="certs.intro">Selected courses and assessments. You are welcome to open a title if you would like to see the original certificate.</p>
             <div id="certification-container"></div>
          </div>
       </div>
@@ -370,77 +383,77 @@
    <section id="engagements">
       <div class="row">
          <div class="three columns header-col">
-            <h1><span>Independent</span></h1>
+            <h1><span data-i18n="work.title">Independent</span></h1>
          </div>
          <div class="nine columns main-col">
-            <p class="engagements-lead">
-               If you need one senior person to ship AI, a website for paid traffic, a mobile app, or a digital-transformation
-               workstream a business can actually run — I take on a small number of those projects myself.
-               Most of them start as a referral. A first conversation is enough to know if we should work together.
+            <p class="engagements-lead" data-i18n="work.lead">
+               I am available for a limited number of independent projects: production AI, websites for advertising,
+               mobile applications, and digital transformation for businesses. Many conversations begin through people
+               I have already worked with. A brief message is enough; I will let you know, courteously, whether I can help.
             </p>
 
-            <h4>What people usually hire me for</h4>
+            <h4 data-i18n="work.howHelp">How I can help</h4>
             <div class="work-offers">
                <div class="work-offer">
-                  <h5>AI that has to run</h5>
-                  <p>
+                  <h5 data-i18n="work.aiTitle">Production AI</h5>
+                  <p data-i18n="work.aiBody">
                      RAG and assistants over your documents, Vietnamese speech (ASR/TTS), computer vision,
-                     or fine-tuning a model for a domain task — designed, evaluated, and handed over so it can stay in production.
+                     or fine-tuning a model for a domain task — designed, evaluated, and handed over so it can remain in production.
                   </p>
                </div>
                <div class="work-offer">
-                  <h5>Websites built to run ads</h5>
-                  <p>
-                     Landing pages and sites with a clear offer, fast load, tracking-ready structure, and a form that
-                     turns paid clicks into conversations — not a pretty page with nothing to do.
+                  <h5 data-i18n="work.adsTitle">Websites for advertising</h5>
+                  <p data-i18n="work.adsBody">
+                     Landing pages and sites with a clear offer, a measured load time, and a form that turns
+                     paid traffic into a conversation. Built so tracking can be attached cleanly.
                   </p>
                </div>
                <div class="work-offer">
-                  <h5>Mobile apps</h5>
-                  <p>
-                     iOS and Android products (React Native or native when the case needs it) with the same delivery bar:
-                     a scope, a release, and something staff or customers can use.
+                  <h5 data-i18n="work.mobileTitle">Mobile applications</h5>
+                  <p data-i18n="work.mobileBody">
+                     iOS and Android products (React Native, or native where it is the better fit), with a defined
+                     scope, a release, and something staff or customers can use.
                   </p>
                </div>
                <div class="work-offer">
-                  <h5>Digital transformation for businesses</h5>
-                  <p>
-                     Internal tools, process automation, and AI in the existing workflow — so the company is not stuck
-                     with slides, scattered Excel, or a chatbot that never leaves a pilot.
+                  <h5 data-i18n="work.dxTitle">Digital transformation</h5>
+                  <p data-i18n="work.dxBody">
+                     Internal tools, process automation, and AI inside the work people already do — so the organization
+                     is not left with unused pilots or scattered spreadsheets.
                   </p>
                </div>
                <div class="work-offer">
-                  <h5>Web products</h5>
-                  <p>
-                     The application the user actually opens: React / Next.js, Java / Spring, or FastAPI,
-                     with auth, data, and a release a customer can accept.
+                  <h5 data-i18n="work.webTitle">Web products</h5>
+                  <p data-i18n="work.webBody">
+                     Applications people open every day: React / Next.js, Java / Spring, or FastAPI,
+                     with authentication, data, and a release the customer can accept.
                   </p>
                </div>
                <div class="work-offer">
-                  <h5>When delivery is the risk</h5>
-                  <p>
-                     A stuck AI or software workstream that needs a plan, a scope, and someone accountable
-                     through UAT — the same discipline I use on T&amp;M and Fixed-Price programs.
+                  <h5 data-i18n="work.deliveryTitle">Delivery</h5>
+                  <p data-i18n="work.deliveryBody">
+                     When an AI or software workstream needs a plan, a scope, and someone accountable through
+                     acceptance — the same care I bring to T&amp;M and Fixed-Price programs.
                   </p>
                </div>
             </div>
 
-            <h4>How it works</h4>
+            <h4 data-i18n="work.howBegin">How we begin</h4>
             <ol class="work-steps">
-               <li><strong>You write.</strong> Problem, who it is for, deadline, and what you already have (docs, data, a repo, or just an idea).</li>
-               <li><strong>I reply on fit.</strong> Yes, a narrower scope, or a clear no. I would rather decline than take work I cannot own.</li>
-               <li><strong>We ship.</strong> One owner from that conversation through something you can put in front of users.</li>
+               <li data-i18n-html="work.step1"><strong>You write.</strong> The problem, who it is for, the timeline, and anything you already have.</li>
+               <li data-i18n-html="work.step2"><strong>I reply honestly.</strong> Whether I can help, or whether a narrower scope would serve you better.</li>
+               <li data-i18n-html="work.step3"><strong>We work together.</strong> One person accountable from that conversation through a result you can use.</li>
             </ol>
 
-            <h4>A good fit</h4>
-            <p>
-               Founders, product owners, and small teams who already feel the problem — and want a senior counterpart,
-               not a large vendor process. Confidential by default. I keep only a few engagements at a time
-               so the work stays close.
+            <h4 data-i18n="work.fitTitle">A good fit</h4>
+            <p data-i18n="work.fitBody">
+               I work well with founders, product owners, and companies that want a senior counterpart rather than
+               a large vendor process. Conversations are confidential. I accept only as much work as I can give
+               proper attention.
             </p>
             <p>
-               A short note is enough.
-               <a href="hire.html" class="button">Start a conversation</a>
+               <span data-i18n="work.welcome">You are welcome to write.</span>
+               <a href="hire.html" class="button" data-i18n="work.cta">Get in touch</a>
             </p>
          </div>
       </div>
@@ -448,8 +461,8 @@
 
    <div id="contact-modal" class="popup-modal mfp-hide">
       <div class="contact-modal-inner">
-         <h3>Get in touch</h3>
-         <p>Send the problem, who it is for, and your deadline. I will reply by email and tell you if I am the right person.</p>
+         <h3 data-i18n="form.title">Get in touch</h3>
+         <p data-i18n="form.intro">Thank you for writing. A few lines about the problem, who it is for, and your timeline are enough. I will reply by email.</p>
          <p class="address">
             Luu Thang · Tay Mo, Nam Tu Liem, Ha Noi<br>
             <a href="tel:+84364384662">(+84) 0364384662</a> ·
@@ -458,36 +471,36 @@
          <form action="" method="post" id="contactForm" name="contactForm">
             <fieldset>
                <div>
-                  <label for="contactName">Name <span class="required">*</span></label>
+                  <label for="contactName"><span data-i18n="form.name">Name</span> <span class="required">*</span></label>
                   <input type="text" value="" size="35" id="contactName" name="name" required>
                </div>
                <div>
-                  <label for="contactEmail">Email <span class="required">*</span></label>
+                  <label for="contactEmail"><span data-i18n="form.email">Email</span> <span class="required">*</span></label>
                   <input type="email" value="" size="35" id="contactEmail" name="email" required>
                </div>
                <div>
-                  <label for="contactPhone">Phone</label>
+                  <label for="contactPhone" data-i18n="form.phone">Phone</label>
                   <input type="tel" value="" size="35" id="contactPhone" name="phone">
                </div>
                <div>
-                  <label for="contactSubject">Subject</label>
+                  <label for="contactSubject" data-i18n="form.subject">Subject</label>
                   <input type="text" value="" size="35" id="contactSubject" name="subject">
                </div>
                <div>
-                  <label for="contactMessage">Message <span class="required">*</span></label>
-                  <textarea cols="50" rows="5" id="contactMessage" name="message" placeholder="What do you need built, for whom, and by when?" required></textarea>
+                  <label for="contactMessage"><span data-i18n="form.message">Message</span> <span class="required">*</span></label>
+                  <textarea cols="50" rows="5" id="contactMessage" name="message" placeholder="A short note on the problem, who it is for, and the timeline." data-i18n-placeholder="form.placeholder" required></textarea>
                </div>
                <div class="privacy-check">
                   <label for="contactPrivacy">
                      <input type="checkbox" id="contactPrivacy" name="privacy" required>
-                     I agree to the <a href="privacy.html">privacy policy</a>.
+                     <span data-i18n-html="form.privacy">I agree to the <a href="privacy.html">privacy policy</a>.</span>
                   </label>
                </div>
                <div style="display:none" aria-hidden="true">
                   <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
                </div>
                <div>
-                  <button class="submit">Send Message</button>
+                  <button class="submit" data-i18n="form.send">Send Message</button>
                   <span id="image-loader">
                      <img alt="" src="images/loader.gif">
                   </span>
@@ -496,7 +509,7 @@
          </form>
          <div id="message-warning"></div>
          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent. Thank you!
+            <i class="fa fa-check"></i> <span data-i18n="form.success">Thank you. Your message has been sent.</span>
          </div>
       </div>
    </div>
@@ -513,11 +526,11 @@
             <ul class="copyright">
                <li>&copy; Copyright 2026</li>
                <li>Luu Thang</li>
-               <li><a href="hire.html">Hire</a></li>
-               <li><a href="privacy.html">Privacy</a></li>
+               <li><a href="hire.html" data-i18n="footer.hire">Hire</a></li>
+               <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
             </ul>
          </div>
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home" data-i18n-title="footer.top"><i class="icon-up-open"></i></a>
          </div>
       </div>
    </footer>
@@ -529,6 +542,7 @@
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
+   <script src="js/i18n.js"></script>
    <script src="js/init.js"></script>
 
 </body>

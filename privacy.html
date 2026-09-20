@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page="privacy">
 <head>
    <meta charset="utf-8">
    <title>Privacy Policy | Luu Thang</title>
@@ -14,41 +14,50 @@
 </head>
 <body class="subpage">
    <nav id="nav-wrap" class="opaque">
-      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+      <a class="mobile-btn" href="#nav-wrap" title="Show navigation" data-i18n-title="nav.show">Show navigation</a>
+      <a class="mobile-btn" href="#" title="Hide navigation" data-i18n-title="nav.hide">Hide navigation</a>
       <ul id="nav" class="nav">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="index.html#about">About</a></li>
-         <li><a href="hire.html">Hire</a></li>
-         <li class="current"><a href="privacy.html">Privacy</a></li>
-         <li><a href="index.html#contact-modal">Contact</a></li>
+         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+         <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+         <li><a href="hire.html" data-i18n="nav.hire">Hire</a></li>
+         <li class="current"><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+         <li><a href="index.html#contact-modal" data-i18n="nav.contact">Contact</a></li>
       </ul>
    </nav>
+   <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="nav.lang">
+      <i class="fa fa-globe" aria-hidden="true"></i>
+      <button type="button" data-set-lang="en" title="English" aria-label="English" data-i18n-title="nav.en" data-i18n-aria="nav.en">
+         <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
+         <span>EN</span>
+      </button>
+      <button type="button" data-set-lang="vi" title="Tiếng Việt" aria-label="Tiếng Việt" data-i18n-title="nav.vi" data-i18n-aria="nav.vi">
+         <span class="lang-flag lang-flag-vi" aria-hidden="true"></span>
+         <span>VI</span>
+      </button>
+   </div>
 
    <div class="legal-wrap">
       <div class="row">
          <div class="twelve columns">
-            <h1>Privacy Policy</h1>
-            <p class="lede">Last updated: 20 September 2026. This site is operated by Luu Thang (Luu Quoc Thang), Tay Mo, Nam Tu Liem, Ha Noi, Vietnam.</p>
+            <h1 data-i18n="privacy.h1">Privacy Policy</h1>
+            <p class="lede" data-i18n="privacy.lede">Last updated: 20 September 2026. This site is operated by Luu Thang (Luu Quoc Thang), Tay Mo, Nam Tu Liem, Ha Noi, Vietnam.</p>
 
-            <h2>What I collect</h2>
-            <p>If you use the contact form, I receive the name, email, phone number (if you provide one), subject, and message you submit. The form is processed by Web3Forms and delivered to my email. Server logs on GitHub Pages may include your IP address in the ordinary course of hosting.</p>
+            <h2 data-i18n="privacy.collectTitle">What I collect</h2>
+            <p data-i18n="privacy.collectBody">If you use the contact form, I receive the name, email, phone number (if you provide one), subject, and message you submit. The form is processed by Web3Forms and delivered to my email. Server logs on GitHub Pages may include your IP address in the ordinary course of hosting.</p>
 
-            <h2>Why</h2>
-            <p>I use that information only to reply to your enquiry, to discuss a possible engagement, and to keep a record of the conversation. I do not sell personal data, and I do not use it for unrelated marketing lists.</p>
+            <h2 data-i18n="privacy.whyTitle">Why</h2>
+            <p data-i18n="privacy.whyBody">I use that information only to reply to your enquiry, to discuss a possible engagement, and to keep a record of the conversation. I do not sell personal data, and I do not use it for unrelated marketing lists.</p>
 
-            <h2>How long</h2>
-            <p>Enquiry emails are kept as long as needed to handle the request and any follow-up work, then deleted or archived with ordinary mailbox retention. You may ask me to delete your message.</p>
+            <h2 data-i18n="privacy.longTitle">How long</h2>
+            <p data-i18n="privacy.longBody">Enquiry emails are kept as long as needed to handle the request and any follow-up work, then deleted or archived with ordinary mailbox retention. You may ask me to delete your message.</p>
 
-            <h2>Your choices</h2>
-            <p>Email <a href="mailto:thanglq.l2t@gmail.com">thanglq.l2t@gmail.com</a> to access, correct, or delete personal data you sent through this site.</p>
+            <h2 data-i18n="privacy.choicesTitle">Your choices</h2>
+            <p data-i18n-html="privacy.choicesBody">Email <a href="mailto:thanglq.l2t@gmail.com">thanglq.l2t@gmail.com</a> to access, correct, or delete personal data you sent through this site.</p>
 
-            <h2>Chính sách ngắn (Tiếng Việt)</h2>
-            <p>Khi bạn gửi form liên hệ, tôi nhận họ tên, email, số điện thoại (nếu có) và nội dung tin nhắn qua Web3Forms, chỉ để phản hồi và trao đổi công việc. Tôi không bán dữ liệu. Liên hệ <a href="mailto:thanglq.l2t@gmail.com">thanglq.l2t@gmail.com</a> nếu bạn muốn chỉnh hoặc xóa thông tin đã gửi.</p>
-
-            <p><a href="hire.html">Hire me</a> · <a href="index.html">Back to profile</a></p>
+            <p><a href="hire.html" data-i18n="privacy.independent">Independent work</a> · <a href="index.html" data-i18n="privacy.back">Return to the profile</a></p>
          </div>
       </div>
    </div>
+   <script src="js/i18n.js"></script>
 </body>
 </html>

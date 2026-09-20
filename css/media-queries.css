@@ -108,6 +108,12 @@
       top: 0;
       right: 0;
    }
+   .lang-switch {
+      top: 12px;
+      right: 86px;
+   }
+   .lang-switch .fa-globe { display: none; }
+
    #nav-wrap > a {
 	   width: 48px;
 		height: 48px;

@@ -162,6 +162,11 @@ jQuery(document).ready(function ($) {
 
    var WEB3FORMS_ACCESS_KEY = '931eedb7-d53f-4520-af9b-e8d3e5e91899';
 
+   function i18n(key, fallback) {
+      var text = window.SiteI18n && window.SiteI18n.t(key);
+      return text || fallback;
+   }
+
    $('form#contactForm button.submit').click(function (e) {
       e.preventDefault();
 
@@ -174,27 +179,27 @@ jQuery(document).ready(function ($) {
       var phoneOk = contactPhone === '' || /^[+0-9][0-9\s().-]{7,}$/.test(contactPhone);
 
       if (contactName.length < 2) {
-         $('#message-warning').html('Please enter your name.').fadeIn();
+         $('#message-warning').html(i18n('form.errName', 'Please enter your name.')).fadeIn();
          return false;
       }
       if (!emailOk) {
-         $('#message-warning').html('Please enter a valid email address.').fadeIn();
+         $('#message-warning').html(i18n('form.errEmail', 'Please enter a valid email address.')).fadeIn();
          return false;
       }
       if (!phoneOk) {
-         $('#message-warning').html('Please enter a valid phone number.').fadeIn();
+         $('#message-warning').html(i18n('form.errPhone', 'Please enter a valid phone number.')).fadeIn();
          return false;
       }
       if (contactMessage.length < 10) {
-         $('#message-warning').html('Please enter a message (at least 10 characters).').fadeIn();
+         $('#message-warning').html(i18n('form.errMessage', 'Please enter a message (at least 10 characters).')).fadeIn();
          return false;
       }
       if ($('#contactPrivacy').length && !$('#contactPrivacy').is(':checked')) {
-         $('#message-warning').html('Please agree to the privacy policy before sending.').fadeIn();
+         $('#message-warning').html(i18n('form.errPrivacy', 'Please agree to the privacy policy before sending.')).fadeIn();
          return false;
       }
       if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-         $('#message-warning').html('Contact form is not configured yet. Please email thanglq.l2t@gmail.com directly.').fadeIn();
+         $('#message-warning').html(i18n('form.errConfig', 'Contact form is not configured yet. Please email thanglq.l2t@gmail.com directly.')).fadeIn();
          return false;
       }
 
@@ -224,12 +229,12 @@ jQuery(document).ready(function ($) {
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();
             } else {
-               $('#message-warning').html((res && res.message) || 'Something went wrong. Please try again.').fadeIn();
+               $('#message-warning').html((res && res.message) || i18n('form.errGeneric', 'Something went wrong. Please try again.')).fadeIn();
             }
          },
          error: function () {
             $('#image-loader').fadeOut();
-            $('#message-warning').html('Could not send the message. Please email thanglq.l2t@gmail.com instead.').fadeIn();
+            $('#message-warning').html(i18n('form.errSend', 'Could not send the message. Please email thanglq.l2t@gmail.com instead.')).fadeIn();
          }
       });
       return false;
@@ -282,7 +287,7 @@ jQuery(document).ready(function ($) {
    function loadCertificates() {
       var groups = [
          {
-            title: 'Professional',
+            title: i18n('certs.professional', 'Professional'),
             items: [
                { file: 'Professional Scrum Master I.jpg', issuer: 'Scrum.org' },
                { file: 'Certified Business Analyst Professional (CBAP).jpg', issuer: 'IIBA' },
@@ -296,7 +301,7 @@ jQuery(document).ready(function ($) {
             ]
          },
          {
-            title: 'AI and product',
+            title: i18n('certs.aiProduct', 'AI and product'),
             items: [
                { file: 'AI Augmented Engineer for Developer.jpg', issuer: 'FPT' },
                { file: 'leading_with_generative_ai.jpg', issuer: 'Harvard ManageMentor' },
@@ -310,8 +315,8 @@ jQuery(document).ready(function ($) {
             ]
          },
          {
-            title: 'Company training',
-            note: 'Internal programs at FPT Software.',
+            title: i18n('certs.company', 'Company training'),
+            note: i18n('certs.companyNote', 'Internal programs at FPT Software.'),
             items: [
                { file: 'BRCMS awareness for Employees by GRC.jpg', issuer: 'FPT' },
                { file: 'Corporate Social Responsibility Training 2025 for All by GRC.jpg', issuer: 'FPT' },
@@ -345,12 +350,19 @@ jQuery(document).ready(function ($) {
 
       container.html(html);
 
-      $('.credential-link').magnificPopup({
-         type: 'image',
-         gallery: { enabled: true }
-      });
+      if ($.fn.magnificPopup) {
+         $('.credential-link').magnificPopup({
+            type: 'image',
+            gallery: { enabled: true }
+         });
+      }
    }
 
-   loadCertificates();
+   if (window.SiteI18n && window.SiteI18n.whenReady) {
+      window.SiteI18n.whenReady(loadCertificates);
+   } else {
+      loadCertificates();
+   }
+   document.addEventListener('site:lang', loadCertificates);
 
 });
