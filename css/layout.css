@@ -379,12 +379,14 @@ ul#nav li.current a { color: #F06000; }
    font-family: 'opensans-bold', sans-serif;
    font-weight: normal;
 }
-#engagements .button {
+#engagements .button,
+#engagements .button:visited {
    margin: 8px 0 0;
    background: #11ABB0;
    color: #fff;
 }
-#engagements .button:hover {
+#engagements .button:hover,
+#engagements .button:focus {
    background: #fff;
    color: #111;
 }
