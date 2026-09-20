@@ -81,6 +81,22 @@ header .banner-text hr {
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
 }
+header .banner-cta {
+   margin: 22px 0 8px 0;
+}
+header .banner-cta .button {
+   background: #11ABB0;
+   color: #fff;
+   border: none;
+   font: 13px/18px 'opensans-bold', sans-serif;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   padding: 14px 26px;
+}
+header .banner-cta .button:hover {
+   background: #fff;
+   color: #111;
+}
 
 /* header social links */
 header .social {
@@ -291,6 +307,49 @@ ul#nav li.current a { color: #F06000; }
 #engagements a:hover,
 #engagements a:focus {
    color: #fff;
+}
+#engagements .work-offers {
+   margin: 6px 0 32px;
+}
+#engagements .work-offer {
+   margin-bottom: 22px;
+   padding-bottom: 18px;
+   border-bottom: 1px solid #2A2A2A;
+}
+#engagements .work-offer:last-child {
+   border-bottom: none;
+   padding-bottom: 0;
+}
+#engagements .work-offer h5 {
+   font: 16px/24px 'opensans-bold', sans-serif;
+   color: #E8E8E8;
+   margin: 0 0 8px;
+}
+#engagements .work-offer p {
+   margin-bottom: 0;
+}
+#engagements .work-steps {
+   margin: 6px 0 32px 18px;
+   padding: 0;
+   color: #7A7A7A;
+}
+#engagements .work-steps li {
+   font: 15px/26px 'librebaskerville-regular', serif;
+   margin-bottom: 10px;
+}
+#engagements .work-steps strong {
+   color: #C8C8C8;
+   font-family: 'opensans-bold', sans-serif;
+   font-weight: normal;
+}
+#engagements .button {
+   margin: 8px 0 0;
+   background: #11ABB0;
+   color: #fff;
+}
+#engagements .button:hover {
+   background: #fff;
+   color: #111;
 }
 
 
