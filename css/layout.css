@@ -96,6 +96,18 @@ header .social li {
 }
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
+.icon-brand {
+   width: 1em;
+   height: 1em;
+   display: inline-block;
+   vertical-align: -0.12em;
+}
+#about .address a {
+   color: inherit;
+}
+#about .address a:hover {
+   color: #11ABB0;
+}
 
 /* scrolldown link */
 header .scrolldown a {
@@ -279,6 +291,82 @@ ul#nav li.current a { color: #F06000; }
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+
+#resume .work-item {
+   border-left: 2px solid #11ABB0;
+   padding-left: 22px;
+   margin-bottom: 8px;
+}
+#resume .work h3 {
+   font: 20px/28px 'opensans-bold', sans-serif;
+}
+
+.skill-group { margin-bottom: 26px; }
+.skill-group h4 {
+   font: 13px/20px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   color: #313131;
+   margin-bottom: 12px;
+}
+.skill-tags { overflow: hidden; }
+.skill-tags span {
+   display: inline-block;
+   margin: 0 8px 8px 0;
+   padding: 7px 12px;
+   background: #F4F4F4;
+   color: #444;
+   font: 13px/18px 'opensans-regular', sans-serif;
+   border-radius: 2px;
+}
+
+.credentials-intro {
+   font: 15px/26px 'librebaskerville-regular', serif;
+   color: #7A7A7A;
+   margin-bottom: 28px;
+}
+.credential-group { margin-bottom: 30px; }
+.credential-group h4 {
+   font: 13px/20px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   color: #313131;
+   margin-bottom: 6px;
+}
+.credential-note {
+   font: 13px/20px 'opensans-regular', sans-serif;
+   color: #9a9a9a;
+   margin-bottom: 10px;
+}
+.credential-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.credential-list li {
+   overflow: hidden;
+   padding: 9px 0;
+   border-bottom: 1px solid #EFEFEF;
+   font: 15px/22px 'opensans-regular', sans-serif;
+   color: #313131;
+}
+.credential-list a,
+.credential-list a:visited {
+   color: #313131;
+}
+.credential-list a:hover {
+   color: #11ABB0;
+}
+.credential-issuer {
+   float: right;
+   color: #9a9a9a;
+   font-size: 13px;
+   padding-left: 12px;
+}
+
+header .banner-text h1 {
+   font: 64px/1.15em 'opensans-bold', sans-serif;
 }
 
 /*----------------------------------------------*/

@@ -225,113 +225,120 @@ jQuery(document).ready(function ($) {
 
 
    /*----------------------------------------------------*/
-   /* Certification Gallery - Dynamic Generation
+   /* Credentials — compact list, not a gallery
    ------------------------------------------------------*/
 
-   function loadCertificates() {
-      const certificateSources = {
-         'Hackerrank': [
-            "sql_basic certificate.jpg",
-            "sql_advanced certificate.jpg",
-            "sql_intermediate certificate.jpg",
-            "frontend_developer_react certificate.jpg",
-            "react_basic certificate.jpg"
-         ],
-         'LevelUp FPT': [
-            "AI Augmented Engineer for Developer.jpg",
-            "BRCMS awareness for Employees by GRC.jpg",
-            "Corporate Social Responsibility Training 2025 for All by GRC.jpg",
-            "Data Protection Training for All by GDPO.jpg",
-            "FPT_Occupational Safety and Health for All by GRC.jpg",
-            "ISMS Refresh Training S1 2025 for All by ISM.jpg",
-            "Prevention Culture No Recurrent Problems​ for Delivery by SEPG.jpg"
-         ],
-         'LinkedIn Learning': [
-            "CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg",
-            "CertificateOfCompletion_Agile Teams in the Age of AI.jpg",
-            "CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg"
-         ],
-         'Datacamp': [
-            "Introduction to AI Agents.jpg",
-            "Understanding ChatGPT.jpg",
-            "Understanding Prompt Engineering.jpg"
-         ],
-         'Coursera': [
-            "Use Generative AI as Your Thought Partner.jpg"
-         ],
-         'Harvard ManageMentor®': [
-            "leading_with_generative_ai.jpg",
-         ],
-         'Udacity': [
-            "Go Language (Golang).jpg"
-         ],
-         'Scrum': [
-            "Professional Scrum Master I.jpg",
-         ],
-         'International Institute of Business Analysis': [
-            "Certified Business Analyst Professional (CBAP).jpg",
-         ],
-         'OutSystems': [
-            "Associate Traditional Web Developer.jpg"
-         ]
+   function prettyCertName(fileName) {
+      var map = {
+         'sql_basic certificate.jpg': 'SQL (Basic)',
+         'sql_advanced certificate.jpg': 'SQL (Advanced)',
+         'sql_intermediate certificate.jpg': 'SQL (Intermediate)',
+         'frontend_developer_react certificate.jpg': 'Frontend Developer (React)',
+         'react_basic certificate.jpg': 'React (Basic)',
+         'AI Augmented Engineer for Developer.jpg': 'AI-Augmented Engineer for Developers',
+         'BRCMS awareness for Employees by GRC.jpg': 'BRCMS Awareness',
+         'Corporate Social Responsibility Training 2025 for All by GRC.jpg': 'Corporate Social Responsibility (2025)',
+         'Data Protection Training for All by GDPO.jpg': 'Data Protection',
+         'FPT_Occupational Safety and Health for All by GRC.jpg': 'Occupational Safety and Health',
+         'ISMS Refresh Training S1 2025 for All by ISM.jpg': 'ISMS Refresh (2025)',
+         'Prevention Culture No Recurrent Problems​ for Delivery by SEPG.jpg': 'Prevention Culture for Delivery',
+         'CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg': 'AI-Powered Presentations',
+         'CertificateOfCompletion_Agile Teams in the Age of AI.jpg': 'Agile Teams in the Age of AI',
+         'CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg': 'AI in the Design-to-Full-Stack Lifecycle',
+         'Introduction to AI Agents.jpg': 'Introduction to AI Agents',
+         'Understanding ChatGPT.jpg': 'Understanding ChatGPT',
+         'Understanding Prompt Engineering.jpg': 'Understanding Prompt Engineering',
+         'Use Generative AI as Your Thought Partner.jpg': 'Generative AI as a Thought Partner',
+         'leading_with_generative_ai.jpg': 'Leading with Generative AI',
+         'Go Language (Golang).jpg': 'Go (Golang)',
+         'Professional Scrum Master I.jpg': 'Professional Scrum Master I',
+         'Certified Business Analyst Professional (CBAP).jpg': 'Certified Business Analysis Professional (CBAP)',
+         'Associate Traditional Web Developer.jpg': 'Associate Traditional Web Developer (OutSystems 11)'
       };
-
-      const container = $('#certification-container');
-      const imagePath = 'certificates/photo';
-
-      for (const source in certificateSources) {
-         if (Object.hasOwnProperty.call(certificateSources, source)) {
-            const imageList = certificateSources[source];
-            const sectionId = source.toLowerCase().replace(/[^a-z0-9]/g, '');
-
-            // Tạo HTML cho từng section (tiêu đề và gallery)
-            let sectionHtml = `
-            <h2 class="source-title">${source}</h2>
-            <div id="${sectionId}-gallery" class="bgrid-quarters s-bgrid-thirds cf certification-section">`;
-
-            // Thêm hình ảnh vào gallery
-            imageList.forEach(imageName => {
-               const imageUrl = `${imagePath}/${imageName}`;
-               const cleanName = imageName
-                  .replace(/[-_]/g, ' ')
-                  .replace(/.jpg/g, '')
-                  .replace(/certificate/gi, 'Certificate');
-
-               sectionHtml += `
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="${imageUrl}" title="${cleanName}">
-                        <img alt="${cleanName}" src="${imageUrl}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>${cleanName}</h5>
-                              <p>View</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-               </div>`;
-            });
-
-            sectionHtml += `</div>`; // Đóng div gallery
-            if (source !== Object.keys(certificateSources).pop()) {
-               sectionHtml += `<hr>`; // Thêm đường kẻ ngang trừ mục cuối cùng
-            }
-
-            container.append(sectionHtml);
-         }
+      if (map[fileName]) {
+         return map[fileName];
       }
+      return fileName
+         .replace(/CertificateOfCompletion[_ ]?/gi, '')
+         .replace(/[-_]/g, ' ')
+         .replace(/\.jpg$/i, '')
+         .replace(/certificate/gi, '')
+         .replace(/\s+/g, ' ')
+         .trim();
+   }
 
-      // Khởi tạo Magnific Popup sau khi tất cả nội dung đã được tạo
-      $('.item-wrap a').magnificPopup({
-         type: 'image',
-         gallery: {
-            enabled: true
+   function loadCertificates() {
+      var groups = [
+         {
+            title: 'Professional',
+            items: [
+               { file: 'Professional Scrum Master I.jpg', issuer: 'Scrum.org' },
+               { file: 'Certified Business Analyst Professional (CBAP).jpg', issuer: 'IIBA' },
+               { file: 'Associate Traditional Web Developer.jpg', issuer: 'OutSystems' },
+               { file: 'Go Language (Golang).jpg', issuer: 'Udacity' },
+               { file: 'sql_advanced certificate.jpg', issuer: 'HackerRank' },
+               { file: 'sql_intermediate certificate.jpg', issuer: 'HackerRank' },
+               { file: 'sql_basic certificate.jpg', issuer: 'HackerRank' },
+               { file: 'frontend_developer_react certificate.jpg', issuer: 'HackerRank' },
+               { file: 'react_basic certificate.jpg', issuer: 'HackerRank' }
+            ]
+         },
+         {
+            title: 'AI and product',
+            items: [
+               { file: 'AI Augmented Engineer for Developer.jpg', issuer: 'FPT' },
+               { file: 'leading_with_generative_ai.jpg', issuer: 'Harvard ManageMentor' },
+               { file: 'Use Generative AI as Your Thought Partner.jpg', issuer: 'Coursera' },
+               { file: 'Introduction to AI Agents.jpg', issuer: 'DataCamp' },
+               { file: 'Understanding Prompt Engineering.jpg', issuer: 'DataCamp' },
+               { file: 'Understanding ChatGPT.jpg', issuer: 'DataCamp' },
+               { file: 'CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg', issuer: 'LinkedIn Learning' },
+               { file: 'CertificateOfCompletion_Agile Teams in the Age of AI.jpg', issuer: 'LinkedIn Learning' },
+               { file: 'CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg', issuer: 'LinkedIn Learning' }
+            ]
+         },
+         {
+            title: 'Company training',
+            note: 'Internal programs at FPT Software.',
+            items: [
+               { file: 'BRCMS awareness for Employees by GRC.jpg', issuer: 'FPT' },
+               { file: 'Corporate Social Responsibility Training 2025 for All by GRC.jpg', issuer: 'FPT' },
+               { file: 'Data Protection Training for All by GDPO.jpg', issuer: 'FPT' },
+               { file: 'FPT_Occupational Safety and Health for All by GRC.jpg', issuer: 'FPT' },
+               { file: 'ISMS Refresh Training S1 2025 for All by ISM.jpg', issuer: 'FPT' },
+               { file: 'Prevention Culture No Recurrent Problems​ for Delivery by SEPG.jpg', issuer: 'FPT' }
+            ]
          }
+      ];
+
+      var container = $('#certification-container');
+      var imagePath = 'certificates/photo';
+      var html = '';
+
+      groups.forEach(function (group) {
+         html += '<div class="credential-group">';
+         html += '<h4>' + group.title + '</h4>';
+         if (group.note) {
+            html += '<p class="credential-note">' + group.note + '</p>';
+         }
+         html += '<ul class="credential-list">';
+         group.items.forEach(function (item) {
+            var name = prettyCertName(item.file);
+            var url = imagePath + '/' + item.file;
+            html += '<li><a class="credential-link" href="' + url + '" title="' + name + '">' + name + '</a>';
+            html += '<span class="credential-issuer">' + item.issuer + '</span></li>';
+         });
+         html += '</ul></div>';
+      });
+
+      container.html(html);
+
+      $('.credential-link').magnificPopup({
+         type: 'image',
+         gallery: { enabled: true }
       });
    }
-   // Call the function when the page is ready
+
    loadCertificates();
 
 });
