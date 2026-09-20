@@ -1000,7 +1000,20 @@ call-to-action .button {
    color: #11ABB0;
    margin-bottom: 18px;
 }
-#contact-modal form { margin-bottom: 12px; }
+#contact-modal .privacy-check,
+.hire-form-wrap .privacy-check {
+   margin: 4px 0 14px;
+}
+#contact-modal .privacy-check label {
+   font: 13px/20px 'opensans-regular', sans-serif;
+   color: #bbb;
+   font-weight: normal;
+}
+#contact-modal .privacy-check input {
+   width: auto;
+   display: inline-block;
+   margin-right: 8px;
+}
 #contact-modal fieldset { margin: 0; padding: 0; border: 0; }
 #contact-modal label {
    font: 13px/20px 'opensans-bold', sans-serif;
@@ -1176,4 +1189,101 @@ footer .social-links li:first-child { margin-left: 0; }
 .hidden {
    display: none;
 }
+
+/* ------------------------------------------------------------------ */
+/* Hire / legal pages (ads + business trust)
+/* ------------------------------------------------------------------ */
+
+.subpage {
+   background: #fff;
+   min-height: 100%;
+}
+.subpage #nav-wrap { background: #111; }
+.subpage #nav-wrap.opaque { background: #111; }
+.hire-hero,
+.legal-wrap {
+   padding: 110px 0 72px;
+}
+.hire-hero h1,
+.legal-wrap h1 {
+   font: 36px/44px 'opensans-bold', sans-serif;
+   color: #1a1a1a;
+   margin-bottom: 16px;
+}
+.hire-hero .lede,
+.legal-wrap .lede {
+   font: 18px/30px 'librebaskerville-regular', serif;
+   color: #555;
+   max-width: 760px;
+   margin-bottom: 22px;
+}
+.hire-identity {
+   font: 15px/26px 'opensans-regular', sans-serif;
+   color: #333;
+   margin-bottom: 8px;
+}
+.hire-identity a { color: #11ABB0; }
+.hire-block { margin-bottom: 48px; }
+.hire-block h2 {
+   font: 13px/20px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   color: #313131;
+   margin-bottom: 14px;
+}
+.hire-grid { overflow: hidden; }
+.hire-card {
+   margin-bottom: 24px;
+}
+.hire-card h3 {
+   font: 18px/26px 'opensans-bold', sans-serif;
+   margin-bottom: 8px;
+}
+.hire-card p,
+.hire-block p,
+.legal-wrap p,
+.legal-wrap li {
+   font: 15px/26px 'librebaskerville-regular', serif;
+   color: #555;
+}
+.hire-steps {
+   margin: 0 0 0 18px;
+   padding: 0;
+}
+.hire-steps li {
+   font: 15px/26px 'librebaskerville-regular', serif;
+   color: #555;
+   margin-bottom: 8px;
+}
+.hire-form-wrap {
+   background: #F4F4F4;
+   padding: 28px 28px 12px;
+}
+.hire-form-wrap h2 { margin-top: 0; }
+.hire-form-wrap label {
+   font: 13px/20px 'opensans-bold', sans-serif;
+   display: block;
+   margin-bottom: 4px;
+}
+.hire-form-wrap input,
+.hire-form-wrap textarea {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px 12px;
+   margin-bottom: 12px;
+   border: 1px solid #ddd;
+   font-size: 14px;
+}
+.hire-form-wrap .privacy-check {
+   font: 13px/20px 'opensans-regular', sans-serif;
+   color: #555;
+   margin-bottom: 16px;
+}
+.hire-form-wrap .privacy-check input { width: auto; margin-right: 8px; }
+.legal-wrap h2 {
+   font: 18px/26px 'opensans-bold', sans-serif;
+   margin: 28px 0 10px;
+}
+.legal-wrap ul { margin: 0 0 16px 20px; }
+.subpage footer { color: #303030; }
 

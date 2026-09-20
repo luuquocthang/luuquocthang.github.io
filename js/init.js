@@ -11,7 +11,9 @@ jQuery(document).ready(function ($) {
    ------------------------------------------------------ */
 
    setTimeout(function () {
-      $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+      if ($.fn.fitText && $('h1.responsive-headline').length) {
+         $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+      }
    }, 100);
 
 
@@ -40,24 +42,26 @@ jQuery(document).ready(function ($) {
    var sections = $("section");
    var navigation_links = $("#nav-wrap a");
 
-   sections.waypoint({
+   if ($.fn.waypoint && sections.length) {
+      sections.waypoint({
 
-      handler: function (event, direction) {
+         handler: function (event, direction) {
 
-         var active_section;
+            var active_section;
 
-         active_section = $(this);
-         if (direction === "up") active_section = active_section.prev();
+            active_section = $(this);
+            if (direction === "up") active_section = active_section.prev();
 
-         var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+            var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
-         navigation_links.parent().removeClass("current");
-         active_link.parent().addClass("current");
+            navigation_links.parent().removeClass("current");
+            active_link.parent().addClass("current");
 
-      },
-      offset: '35%'
+         },
+         offset: '35%'
 
-   });
+      });
+   }
 
 
    /*----------------------------------------------------*/
@@ -65,10 +69,10 @@ jQuery(document).ready(function ($) {
    /* equal to the browser height.
    ------------------------------------------------------ */
 
-   $('header').css({ 'height': $(window).height() });
+   $('header#home').css({ 'height': $(window).height() });
    $(window).on('resize', function () {
 
-      $('header').css({ 'height': $(window).height() });
+      $('header#home').css({ 'height': $(window).height() });
       $('body').css({ 'width': $(window).width() })
    });
 
@@ -79,7 +83,7 @@ jQuery(document).ready(function ($) {
 
    $(window).on('scroll', function () {
 
-      var h = $('header').height();
+      var h = $('#home').height() || 0;
       var y = $(window).scrollTop();
       var nav = $('#nav-wrap');
 
@@ -121,29 +125,33 @@ jQuery(document).ready(function ($) {
       }
    };
 
-   $('.contact-popup').magnificPopup(contactPopupOptions);
+   if ($.fn.magnificPopup) {
+      $('.contact-popup').magnificPopup(contactPopupOptions);
 
-   if (window.location.hash === '#contact-modal') {
-      $.magnificPopup.open($.extend({
-         items: { src: '#contact-modal' }
-      }, contactPopupOptions));
+      if (window.location.hash === '#contact-modal') {
+         $.magnificPopup.open($.extend({
+            items: { src: '#contact-modal' }
+         }, contactPopupOptions));
+      }
    }
 
 
    /*----------------------------------------------------*/
    /* Flexslider
    /*----------------------------------------------------*/
-   $('.flexslider').flexslider({
-      namespace: "flex-",
-      controlsContainer: ".flex-container",
-      animation: 'slide',
-      controlNav: true,
-      directionNav: false,
-      smoothHeight: true,
-      slideshowSpeed: 7000,
-      animationSpeed: 600,
-      randomize: false,
-   });
+   if ($.fn.flexslider && $('.flexslider').length) {
+      $('.flexslider').flexslider({
+         namespace: "flex-",
+         controlsContainer: ".flex-container",
+         animation: 'slide',
+         controlNav: true,
+         directionNav: false,
+         smoothHeight: true,
+         slideshowSpeed: 7000,
+         animationSpeed: 600,
+         randomize: false,
+      });
+   }
 
    /*----------------------------------------------------*/
    /* contact form  (Web3Forms -> email)
@@ -179,6 +187,10 @@ jQuery(document).ready(function ($) {
       }
       if (contactMessage.length < 10) {
          $('#message-warning').html('Please enter a message (at least 10 characters).').fadeIn();
+         return false;
+      }
+      if ($('#contactPrivacy').length && !$('#contactPrivacy').is(':checked')) {
+         $('#message-warning').html('Please agree to the privacy policy before sending.').fadeIn();
          return false;
       }
       if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
