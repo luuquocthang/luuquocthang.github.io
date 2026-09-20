@@ -124,44 +124,79 @@ jQuery(document).ready(function ($) {
    });
 
    /*----------------------------------------------------*/
-   /* contact form
+   /* contact form  (Web3Forms -> email)
+      Get a free access key: https://web3forms.com
+      then paste it below. Restrict the key to this domain
+      in the Web3Forms dashboard after the first successful send.
    ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function () {
+   var WEB3FORMS_ACCESS_KEY = '931eedb7-d53f-4520-af9b-e8d3e5e91899';
+
+   $('form#contactForm button.submit').click(function (e) {
+      e.preventDefault();
+
+      var contactName = $.trim($('#contactForm #contactName').val());
+      var contactEmail = $.trim($('#contactForm #contactEmail').val());
+      var contactPhone = $.trim($('#contactForm #contactPhone').val());
+      var contactSubject = $.trim($('#contactForm #contactSubject').val());
+      var contactMessage = $.trim($('#contactForm #contactMessage').val());
+      var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail);
+      var phoneOk = /^[+0-9][0-9\s().-]{7,}$/.test(contactPhone);
+
+      if (contactName.length < 2) {
+         $('#message-warning').html('Please enter your name.').fadeIn();
+         return false;
+      }
+      if (!emailOk) {
+         $('#message-warning').html('Please enter a valid email address.').fadeIn();
+         return false;
+      }
+      if (!phoneOk) {
+         $('#message-warning').html('Please enter a valid phone number.').fadeIn();
+         return false;
+      }
+      if (contactMessage.length < 10) {
+         $('#message-warning').html('Please enter a message (at least 10 characters).').fadeIn();
+         return false;
+      }
+      if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+         $('#message-warning').html('Contact form is not configured yet. Please email thanglq.l2t@gmail.com directly.').fadeIn();
+         return false;
+      }
 
       $('#image-loader').fadeIn();
-
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
-
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-         '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      $('#message-warning').hide();
 
       $.ajax({
-
-         type: "POST",
-         url: "inc/sendEmail.php",
-         data: data,
-         success: function (msg) {
-
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
+         type: 'POST',
+         url: 'https://api.web3forms.com/submit',
+         contentType: 'application/json',
+         dataType: 'json',
+         data: JSON.stringify({
+            access_key: WEB3FORMS_ACCESS_KEY,
+            name: contactName,
+            email: contactEmail,
+            phone: contactPhone,
+            subject: contactSubject || 'New message from luuquocthang.github.io',
+            message: contactMessage,
+            from_name: contactName,
+            replyto: contactEmail,
+            botcheck: $('#contactForm input[name="botcheck"]').is(':checked')
+         }),
+         success: function (res) {
+            $('#image-loader').fadeOut();
+            if (res && res.success) {
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();
+            } else {
+               $('#message-warning').html((res && res.message) || 'Something went wrong. Please try again.').fadeIn();
             }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-               $('#message-warning').fadeIn();
-            }
-
+         },
+         error: function () {
+            $('#image-loader').fadeOut();
+            $('#message-warning').html('Could not send the message. Please email thanglq.l2t@gmail.com instead.').fadeIn();
          }
-
       });
       return false;
    });

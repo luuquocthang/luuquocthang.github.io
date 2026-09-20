@@ -33,6 +33,7 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#certification">Certification</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul>
       </nav>
       <div class="row banner">
@@ -297,6 +298,69 @@
                </div>
             </div>
          </div>
+      </div>
+   </section>
+
+   <section id="contact">
+      <div class="row section-head">
+         <div class="two columns header-col">
+            <h1><span>Get In Touch.</span></h1>
+         </div>
+         <div class="ten columns">
+            <p class="lead">Leave a message and I will receive it in my email. I usually reply as soon as I can.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="eight columns">
+            <form action="" method="post" id="contactForm" name="contactForm">
+               <fieldset>
+                  <div>
+                     <label for="contactName">Name <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactName" name="name" required>
+                  </div>
+                  <div>
+                     <label for="contactEmail">Email <span class="required">*</span></label>
+                     <input type="email" value="" size="35" id="contactEmail" name="email" required>
+                  </div>
+                  <div>
+                     <label for="contactPhone">Phone <span class="required">*</span></label>
+                     <input type="tel" value="" size="35" id="contactPhone" name="phone" required>
+                  </div>
+                  <div>
+                     <label for="contactSubject">Subject</label>
+                     <input type="text" value="" size="35" id="contactSubject" name="subject">
+                  </div>
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="8" id="contactMessage" name="message" required></textarea>
+                  </div>
+                  <div style="display:none" aria-hidden="true">
+                     <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+                  </div>
+                  <div>
+                     <button class="submit">Send Message</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+               </fieldset>
+            </form>
+            <div id="message-warning"></div>
+            <div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent. Thank you!
+            </div>
+         </div>
+         <aside class="four columns">
+            <div class="widget widget_contact">
+               <h4>Contact Details</h4>
+               <p class="address">
+                  Luu Quoc Thang<br>
+                  Dai Mo - Nam Tu Liem - Ha Noi<br>
+                  <span>(+84) 0364384662</span><br>
+                  <span>thanglq.l2t@gmail.com</span>
+               </p>
+            </div>
+         </aside>
       </div>
    </section>
 
