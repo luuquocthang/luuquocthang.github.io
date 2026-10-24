@@ -270,7 +270,12 @@ jQuery(document).ready(function ($) {
          'Go Language (Golang).jpg': 'Go (Golang)',
          'Professional Scrum Master I.jpg': 'Professional Scrum Master I',
          'Certified Business Analyst Professional (CBAP).jpg': 'Certified Business Analysis Professional (CBAP)',
-         'Associate Traditional Web Developer.jpg': 'Associate Traditional Web Developer (OutSystems 11)'
+         'Associate Traditional Web Developer.jpg': 'Associate Traditional Web Developer (OutSystems 11)',
+         'Attracting and Cultivating Talent.jpg': 'Attracting and Cultivating Talent',
+         'Decision Making.jpg': 'Decision Making',
+         'Difficult Interactions.jpg': 'Difficult Interactions',
+         'Diversity Inclusion and Belonging.jpg': 'Diversity, Inclusion, and Belonging',
+         'Persuading Others.jpg': 'Persuading Others'
       };
       if (map[fileName]) {
          return map[fileName];
@@ -312,6 +317,16 @@ jQuery(document).ready(function ($) {
                { file: 'CertificateOfCompletion_Using AI in the Design to FullStack Development Life Cycle.jpg', issuer: 'LinkedIn Learning' },
                { file: 'CertificateOfCompletion_Agile Teams in the Age of AI.jpg', issuer: 'LinkedIn Learning' },
                { file: 'CertificateOfCompletion_AIPowered Presentations Crafting Compelling PowerPoints with ChatGPT and Copilot.jpg', issuer: 'LinkedIn Learning' }
+            ]
+         },
+         {
+            title: i18n('certs.leadership', 'Leadership and management'),
+            items: [
+               { file: 'Attracting and Cultivating Talent.jpg', issuer: 'Harvard Business Impact' },
+               { file: 'Decision Making.jpg', issuer: 'Harvard Business Impact' },
+               { file: 'Difficult Interactions.jpg', issuer: 'Harvard Business Impact' },
+               { file: 'Diversity Inclusion and Belonging.jpg', issuer: 'Harvard Business Impact' },
+               { file: 'Persuading Others.jpg', issuer: 'Harvard Business Impact' }
             ]
          },
          {
